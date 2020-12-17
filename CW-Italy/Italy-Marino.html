@@ -4,12 +4,16 @@
     <head>
         <title>Country Explorer</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-
+        <link rel="icon" href="photos/icon.jpg" type="image/x-icon"/> 
         <style>
             iframe {
                 width: 300px;
                 height: 340px;
             }
+            progress{
+                float:right;
+                width: 20%;
+            }   
             .basic-info{
                 border: black dashed 2px;
                 margin: 0px;
@@ -28,6 +32,7 @@
             #frame{
                 position: relative;
                 left: 10px;
+                background-color: lightcyan;
             }
             .facts{
                 width: 500px;
@@ -36,6 +41,7 @@
                 width: 350px;
                 text-align: justify;
             }
+
         </style>
     </head>
     <body>
@@ -50,10 +56,17 @@
 
         <div class="content">
             <br>
+            <br>
+            <br>
+
+            <progress value="65" max="100"></progress>
+
             <h1>Italy</h1>
             <hr noshade>
             <h2>General Information</h2>
+
             <img id="italy" src="photos/Italian-Flag.png" alt="Flag of Italy">
+
             <p>
                 Italy is a country consisting of a continental part, delimited by the Alps and a peninsula surrounded by several islands. Italy is located in south-central Europe, and is considered part of western Europe. A unitary parliamentary republic with Rome as its capital, the country covers a total area of 301,340 km2 and shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican City and San Marino. Italy has a territorial enclave in Switzerland and a maritime exclave in Tunisian waters. With around 60 million inhabitants, Italy is the third-most populous member state of the European Union.
             </p>
@@ -131,24 +144,22 @@
                 </p>
 
                 <h3>Key Rulers</h3>
-                <h5>Julius Caesar c. 100 BCE–44 BCE</h5>
+                <h4>Julius Caesar c. 100 BCE–44 BCE</h4>
                 <p class="rulers" align=left>
                     A great general and statesman, Julius Caesar won a civil war to become both sole ruler of the extensive Roman domains and dictator for life, setting in motion a process of transformation that led to the creation of the Roman Empire. He was assassinated by enemies and is arguably the most famous ancient Roman.
                 </p>
-                
-                <h5>Giuseppe Garibaldi 1807–1882</h5>
+
+                <h4>Giuseppe Garibaldi 1807–1882</h4>
                 <p class="rulers" align=center>
                     After exile in South America, forced upon him because of his role in an attempted republican revolution, Guiseppe Garibaldi commanded forces in several Italian conflicts of the 19th century. He played an important role in Italian unification when he and his volunteer army of “Redshirts” captured Sicily and Naples and allowed them to join the Kingdom of Italy. 
                 </p>
-                
-                <h5>Benito Mussolini 1883–1945</h5>
+
+                <h4>Benito Mussolini 1883–1945</h4>
                 <p class="rulers" align=right>
                     Mussolini became the youngest-ever prime minister of Italy in 1922, using his fascist organization of “Blackshirts” to propel him to power. He transformed the office into a dictatorship and allied with Hitler’s Germany, but was forced to flee when World War II turned Italy against him. He was captured and executed.
                 </p>
 
             </div>
-
-
 
             <h1>Facts about Italy</h1>
 
@@ -171,6 +182,39 @@
                     <li>There are over 1,500 lakes in Italy.</li>
                 </ol>
             </div>
+            
+            <br>
+            <br>
+            
+            <div class="comments">
+                <h3>Leave a comment below</h3>
+                <table>
+                    <tbody>
+                        <form action="submit.html" method="post">
+                            <tr>
+                                <td><label for="name">Name: </label> <input type="text" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">E-Mail: </label><input type="text" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="subject">Subject: </label><input type="text" id="subject"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="comment">Comment: </label><input type="text" id="comment"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="submit"><input type="reset"></td>
+                            </tr>
+                        
+                        </form>
+                    
+                    
+                    </tbody>
+                </table>
+                    
+            </div>
+
 
         </div>
 
