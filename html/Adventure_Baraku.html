@@ -4,12 +4,121 @@
     <head>
         <title>England - Adventurist</title>
         <link rel="stylesheet" type="text/css" href="..//other/styles.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color:#d6f5f5;
+            }
+            .hero-image{
+                height: 600px;
+                width:100%;
+
+                background: url(..//images/barakuAirballoon.jpeg) no-repeat center;
+
+                /*                overflow:hidden;*/
+                /*            position:relative;*/
+                background-position:center;
+                background-size:cover:
+            }
+            .container{
+                position:absolute;
+                /*
+                top:200px;
+                left:500px;
+                */
+                top:20%;
+                left:30%;
+                font-weight:700;
+                color:midnightblue;
+                text-align: center;
+
+            }
+            .container h1{
+                font-size:72px;
+                letter-spacing: 0,2em;
+            }
+            .container h1 span{
+                border:10px solid white;
+                padding:6px;14px;
+                display:inline-block;
+            }
+            .container p{font-style:italic;font-size:20px; text-shadow: 0 0 10px black;}
+
+            /*Card starts here*/
+            h2{
+                text-transform: uppercase;
+                text-align:center;
+                letter-spacing:2px;
+            }
+            h3{
+                text-align:center;
+            }
+            .contentContainer{
+                max-width:1170px;
+                width:100%;
+                margin: 0 auto;
+                display: flex;
+                text-align: justify;
+                background-color:lightgoldenrodyellow;
+
+            }
+            .column{
+                margin: 0 15px 25px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                border-radius:10px;
+                flex-basis:33%;
+            }
+            .card{
+                padding: 15px 25px;
+            }
+            .contentContainerBackground{background-color:#d6f5f5;
+                padding-top:10px;
+            }
+
+            /*Where to stay card starts here*/
+            .whereToStay{
+                width:100%;
+                display:flex;
+
+            }
+            .columnStay{
+                flex-basis:50%;
+                padding:20px;
+            }
+            .textOnly{
+                text-align:center;
+            }
+
+            /*What to eat card starts here*/
+
+            .whatToEat{
+                width:100%;
+                display:flex;
+
+            }
+            .columnEat{
+                flex-basis:50%;
+                padding:20px;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .whatToEatBackground{
+                background-color:lightyellow;
+                padding:20px;
+            }
+
+
+
+        </style>
     </head>
     <body>
 
         <div class="topnav">
 
-            <a href="#index">Index</a>
+            <a href="..//index/index.html">Index</a>
 
             <div class="dropdown">
                 <button class="dropbutton"><a href="..//html/England_Baraku.html">England</a>
@@ -58,36 +167,103 @@
             <a href="#">Quiz</a>
         </div>
 
+        <br><br>
+        <div class="hero-image">
+            <div class="container">
+                <h1><span>The Adventurist</span></h1>
+                <span class="description"><p>Welcome to your next adventure!</p></span>
+            </div>
+        </div>
 
-        <div class="content">
-            <h1>The Adventurist</h1>
-            <h2>Welcome to your next adventure!</h2>
+        <div class="contentContainerBackground">
             <h2>Things to do:</h2>
+            <div class="contentContainer">
 
-            <h3>Go Skydiving</h3>
-            <p>This activity includes free falling from an aircraft before landing by parachute. Freefall from up to 4500 meters and reach speeds of 200km/h! Skydive Northwest is one of the organizations that offers the opportunity to exeriencing this thrill and. Beginners can enjoy this unforgettable experience while the instructor flies and lands the parachute, this is called tandem skydiving. Those willing to can book training classes and use automatically deplyed prachutes.</p>
+                <br><br>
+                <div class="columns">
+                    <div class="card card1">
 
-            <h3>Climb a Mountain</h3>
-            <p>Hiking is a physical demanding challenge that will test your limits. This experience is assocciated with health benefits as well as being a great opportunity to clear your mind and explore nature. England offers breathtaking mountains for all types of hikers, begginner to professional. Scafell Pike, located in Cumbria, is the highest mountain in England with an elevation of 978m. There are three main routes, varying in length and difficulty.
-            </p>
+                        <h3>Go Skydiving</h3>
+                        <p>This activity includes free falling from an aircraft before landing by parachute. Freefall from up to 4500 meters and reach speeds of 200km/h! Skydive Northwest is one of the organizations that offers the opportunity to exeriencing this thrill and. Beginners can enjoy this unforgettable experience while the instructor flies and lands the parachute, this is called tandem skydiving. Those willing to can book training classes and use automatically deplyed prachutes.</p>
+                    </div>
+                </div>
 
-            <h3>Go White Water Rafting</h3>
-            <p>White water rafting is an exciting water-based activity. Navigating rivers using an inflatable raft while working as a team can be quite challanging. There are six grades of difficulty in white water rafting, ranging from class 1 to class 6, class 1 being the safest. In England, you can choose to paddle through natural rivers or artifical ones year-round. Some of the popular choices include Cardiff International White Water, Lee Valley Center and Rapid Horizons. Since rafting requires a team effort, this is a great opportunity to make friends, just remember to bring a spare change of clothes!
-            </p>
-            <p>Pricing ranges from 55€ to 72€</p>
+                <div class="columns">
+                    <div class="card card2">
+                        <h3>Go White Water Rafting</h3>
+                        <p>White water rafting is an exciting water-based activity. Navigating rivers using an inflatable raft while working as a team can be quite challanging. There are six grades of difficulty in white water rafting, ranging from class 1 to class 6, class 1 being the safest. In England, you can choose to paddle through natural rivers or artifical ones year-round. Some of the popular choices include Cardiff International White Water, Lee Valley Center and Rapid Horizons. Since rafting requires a team effort, this is a great opportunity to make friends, just remember to bring a spare change of clothes! Pricing ranges from 55€ to 72€.
+                        </p>
+                    </div>
+                </div>
 
-            <h2>Where to stay?</h2>
-            <h3>Go Camping</h3>
-            <p>If you are looking for a real adventure, we recommend packing your bags and going camping. Camping is an inexpensive opportunity to challange your mind and body while connecting with nature. Clear your mind while picking up some survival skills in the fresh air of England. England offers campsites where you can rent all the equipment you will need, from tents to caravans. Choose the place and adventure that best suits you and get wild!
-            </p>
-            <p>Pricing starts at 10€ per night.</p>
 
-            <h2>What to eat?</h2>
-            <h3>Try local foods</h3>
-            <p>Consuming local products is a great way to expand your palate while also supporting local businesses. </p>
 
+                <div class="columns">
+                    <div class="card card3">
+                        <h3>Climb a Mountain</h3>
+                        <p>Hiking is a physical demanding challenge that will test your limits. This experience is assocciated with health benefits as well as being a great opportunity to clear your mind and explore nature. England offers breathtaking mountains for all types of hikers, begginner to professional. Scafell Pike, located in Cumbria, is the highest mountain in England with an elevation of 978m. There are three main routes, varying in length and difficulty.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <h2>Where to stay:</h2>
+        <div class="whereToStay">
+
+            <div class="columnStay ">
+                <div class="stayCard textOnly">
+
+                    <h3>Go Camping</h3> <br>
+                    <p>If you are looking for a real adventure, we recommend packing your bags and going camping. Camping is an inexpensive opportunity to challange your mind and body while connecting with nature.</p> <br><br>
+                    <p> Clear your mind while picking up some survival skills in the fresh air of nature. England offers campsites where you can rent all the equipment you will need, from tents to caravans. </p> <br><br>
+                    <p> Choose the place and adventure that best suits you and get wild! Pricing starts at 10€ per night.</p>
+
+                </div>
+            </div>
+
+
+            <div class="columnStay imageOnly">
+                <div class="stayCard">
+                    <img src="..//images/barakuCampfire.jpeg " width="700" >
+                </div>
+            </div>
 
         </div>
+
+
+
+        <div class="whatToEatBackground">
+            <h2>What to eat:</h2>
+
+
+            <div class="whatToEat">
+
+                <div class="columnEat imageOnlyEat">
+                    <div class="eatCard">
+                        <img src="..//images/barakuFarm.jpeg" width="700" >
+                    </div>
+                </div>
+
+
+                <div class="columnEat ">
+                    <div class="eatCard textOnlyEat">
+
+                        <h3>Try local foods</h3>
+                        <p>Consuming local products is a great way to expand your palate while also supporting local businesses. </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
 
         <div class="footer">
         </div>
