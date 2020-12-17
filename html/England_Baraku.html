@@ -3,38 +3,203 @@
 <html>
     <head>
         <title>England</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="..//other/styles.css">
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            .container{
+                width:100%;
+                height:100vh;
+                background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(..//images/englandBACKGROUND1920.jpeg);
+                background-position:center;
+                background-size:cover:
+
+            }
+            .row{
+                display: flex;
+                height:125%;
+                align-items: center;
+            }
+            .col{
+                flex-basis:50%;
+            }
+            h1{
+                color: #fff;
+                font-size:100px;
+            }
+            .intro{
+                color: #fff;
+                font-size:11px;
+                line-height: 15px;
+                padding:10px
+            }
+            .card{
+                width:200px;
+                height:230px;
+                display:inline-block;
+                border-radius:10px;
+                padding:15px 25px;
+                box-sizing:border-box;
+                cursor:pointer;
+                margin:10px 35px;
+                background-position:center;
+                background-size:cover;
+                transition: transform 0.5s;
+            }
+            .card1 {
+                background-image:url(..//images/englandAdventureResize.jpeg);
+            }
+            .card2 {
+                background-image:url(..//images/englandHistoryResize.jpeg);
+            }
+            .card3{
+                background-image:url(..//images/englandRecreationalResize.jpeg);
+            }
+            .card4{
+                background-image:url(..//images/englandPhotographerResize.jpeg);
+            }
+
+            .card:hover{
+                transform: translateY(-10px)
+            }
+            h5{
+                color:white;
+                text-shadow: 0 0 5px #999;
+                text-align: center;
+            }
+            .intro{font-size:13px}
+
+            a{text-decoration:none;}
+
+/*            second row starts here*/
+            .col2{flex-basis:40%;}
+             .row2{
+                display: flex;
+                height:125%;
+                align-items: center;
+            }
+
+        </style>
     </head>
     <body>
 
         <div class="topnav">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+
+            <a href="..//index/index.html">Index</a>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/England_Baraku.html">England</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/Adventure_Baraku.html">Adventurist</a>
+                    <a href="../html/History_Baraku.html">Historian</a>
+                    <a href="../html/Recreation_Baraku.html">Recreationalist</a>
+                    <a href="../html/Photograph_Baraku.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#">Italy</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Adventurist</a>
+                    <a href="#">Historian</a>
+                    <a href="#">Recreationalist</a>
+                    <a href="#">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#">U.S</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Adventurist</a>
+                    <a href="#">Historian</a>
+                    <a href="#">Recreationalist</a>
+                    <a href="#">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#">Canada</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Adventurist</a>
+                    <a href="#">Historian</a>
+                    <a href="#">Recreationalist</a>
+                    <a href="#">Photographer</a>
+                </div>
+            </div>
+
+            <a href="#">Quiz</a>
         </div>
 
-        <div class="content">
-            <h1>England</h1>
-            <h2>General Information</h2>
 
-            <p>
-                England is a country rich in tradition and culture that offers something for everyone. It borders Wales to the West and Scotland to the north, forming together Great Britain. With the addition of Northern Ireland, the United Kingdom is formed. As part of the UK, England is a constitutional monarchy with a parliamentary system. England welcomes over 37 million tourists every year and is home to ninteen UNESCO World Heritage Sites.
-            </p>
+        <div class="container">
 
-
-            <ul>
-                <h4>Basic information</h4>
-                <li>Capital: London</li>
-                <li>Location: Western Europe</li>
-                <li>Climate: Oceanic</li>
-                <li>Population: 56 milion</li>
-                <li>Area: 130,279 km2</li>
-                <li>Time zone: GMT+0</li>
-                <li>Language: English</li>
-                <li>Currency:</li>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <h1>England</h1>
+                    <p class="intro">England is a country rich in tradition and culture that offers something for everyone. It borders Wales to the West and Scotland to the north, forming together Great Britain. With the addition of Northern Ireland, the United Kingdom is formed. As part of the UK, England is a constitutional monarchy with a parliamentary system. England welcomes over 37 million tourists every year and is home to ninteen UNESCO World Heritage Sites.</p>
+                </div>
+                <div class="col">
+                    <a  href="..//html/Adventure_Baraku.html">
+                        <div class="card card1">
+                            <h5>Adventurer</h5>
+                        </div>
+                    </a>
+                    <a  href="..//html/History_Baraku.html">
+                        <div class="card card2">
+                            <h5>Historian</h5>
+                        </div>
+                    </a>
+                    <a  href="..//html/Recreation_Baraku.html">
+                        <div class="card card3">
+                            <h5>Recreationalist</h5>
+                        </div>
+                    </a>
+                    <a  href="..//html/Photograph_Baraku.html">
+                        <div class="card card4">
+                            <h5>Photographer</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
+
+
+        <div class="basicInfo">
+
+            <div class="row2">
+
+                <div class="col2">
+                    <h4>Basic information</h4>
+                    <ul>
+                        <li>Capital: London</li>
+                        <li>Location: Western Europe</li>
+                        <li>Climate: Oceanic</li>
+                    </ul>
+                </div>
+
+                <div class="col2">
+                    <ul>
+                        <li>Population: 56 milion</li>
+                        <li>Area: 130,279 km2</li>
+                        <li>Time zone: GMT+0</li>
+                        <li>Language: English</li>
+                        <li>Currency: Pound sterling (£)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
 
         <div class="funfacts">
             <h3>Fun facts about England:</h3>
