@@ -4,6 +4,124 @@
     <head>
         <title>England - Photographer</title>
         <link rel="stylesheet" type="text/css" href="..//other/styles.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color:#335;
+            }
+            .hero-image{
+                height: 600px;
+                width:100%;
+
+
+                background: url(..//images/barakuPhotographerBackgroundResize.jpg) no-repeat center;
+
+                /*                overflow:hidden;*/
+                /*            position:relative;*/
+                background-position:center;
+                background-size:cover:
+            }
+            .container{
+                position:absolute;
+                /*
+                top:200px;
+                left:500px;
+                */
+                top:20%;
+                left:30%;
+                font-weight:700;
+                color:white;
+                text-align: center;
+
+            }
+            .container h1{
+                font-size:72px;
+                letter-spacing: 0,2em;
+            }
+            .container h1 span{
+                border:10px solid white;
+                padding:6px;14px;
+                display:inline-block;
+            }
+            .container p{font-style:italic;font-size:20px; text-shadow: 0 0 10px black;}
+
+            /*Card starts here*/
+            h2{
+                text-transform: uppercase;
+                text-align:center;
+                letter-spacing:2px;
+                color:white;
+            }
+            h3{
+                text-align:center;
+            }
+            .contentContainer{
+                max-width:1170px;
+                width:100%;
+                margin: 0 auto;
+                display: flex;
+                text-align: justify;
+                background-color:#003380;
+                color:white;
+
+
+            }
+            .column{
+                margin: 0 15px 25px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                border-radius:10px;
+                flex-basis:33%;
+            }
+            .card{
+                padding: 15px 25px;
+            }
+            .contentContainerBackground{background-color:#335;
+                padding-top:10px;
+            }
+
+            /*Where to stay card starts here*/
+            .whereToStay{
+                width:100%;
+                display:flex;
+                color:white;
+
+            }
+            .columnStay{
+                flex-basis:50%;
+                padding:20px;
+            }
+            .textOnly{
+                text-align:center;
+            }
+
+            /*What to eat card starts here*/
+
+            .whatToEat{
+                width:100%;
+                display:flex;
+                color:white;
+                text-align:center;
+
+            }
+            .columnEat{
+                flex-basis:50%;
+                padding:20px;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .whatToEatBackground{
+                background-color:#003380;
+                padding:20px;
+            }
+
+
+
+        </style>
+
+
     </head>
     <body>
 
@@ -59,33 +177,104 @@
         </div>
 
 
-        <div class="content">
-            <h1>The Photographer</h1>
 
-            <h2>Welcome to your next album!</h2>
 
+        <br><br>
+        <div class="hero-image">
+            <div class="container">
+                <h1><span>The Photographer</span></h1>
+                <span class="description"><p>Welcome to your next album!</p></span>
+            </div>
+        </div>
+
+        <div class="contentContainerBackground">
             <h2>Places to visit:</h2>
+            <div class="contentContainer">
 
-            <h3>Big Ben</h3>
-            <p>This iconic london landmark is located at the north of the Westminister Palace. The tower stands 96m tall and was built in 1843. To get the best view of the tower, it is recommended to visit in the evenings, when the tower lights up. When visiting the Big Ben, you are surrounded by breathtaking views that include the Westminister Bridge and Thames River. To take some great pictures you can also go on a ride on the London Eye, for a price of 30€.</p>
+                <br><br>
+                <div class="columns">
+                    <div class="card card1">
 
-            <h3>Jurastic Coast</h3>
-            <p>The Jurassic Coast, a World Heritage Site, is located in the coast of southern England. This geographical documents 185 million years of geological history. The coast stretches for 154 km and makes up for some phenomenal nature sights, more famously the Durdle Door. This natural arch, formed from a layer of hard limestone, stands vertically out of the sea.</p>
+                        <h3>Big Ben</h3>
+                        <p>This iconic london landmark is located at the north of the Westminister Palace. The tower stands 96m tall and was built in 1843. To get the best view of the tower, it is recommended to visit in the evenings, when the tower lights up. When visiting the Big Ben, you are surrounded by breathtaking views that include the Westminister Bridge and Thames River. To take some great pictures you can also go on a ride on the London Eye, for a price of 30€.</p>
+                    </div>
+                </div>
 
-            <h3>Chester Zoo</h3>
-            <p>With over 35 000 animals and 50 hectares of zoological gardens, Chester Zoo is the largest zoo in England. The zoo was opened in 1931 and its the most visited wildife attraction in Britain, with over 2 million yearly visitors. In 2007 Forbes included Chester Zoo as one of the fifteen best zoos in the world, while in 2017 it was named third in the world by TripAdvisor. Take the opportunity to meet and photograph some of the most exotic animals in the planet. Entrance to the zoo costs 26€.</p>
+                 <div class="columns">
+                    <div class="card card2">
+                        <h3>Chester Zoo</h3>
+                        <p>With over 35 000 animals and 50 hectares of zoological gardens, Chester Zoo is the largest zoo in England. The zoo was opened in 1931 and its the most visited wildife attraction in Britain, with over 2 million yearly visitors. In 2007 Forbes included Chester Zoo as one of the fifteen best zoos in the world, while in 2017 it was named third in the world by TripAdvisor. Take the opportunity to meet and photograph some of the most exotic animals in the planet. Entrance to the zoo costs 26€.</p>
+                    </div>
+                </div>
 
-            <h2>Where to stay:</h2>
 
-            <h3>London</h3>
-            <p>With so much to visit and see, our recommendation would be to stay in the capital of England. This metropolitan city is part of the top 5 most visited cities in the world annualy and is filled with breathtaking views. Make sure the hotel room has a good view at a reasonable price point. "CitizenM Tower of London" is one of the hotels in central London with a stunning view for less than 120€.
 
-            <h2>What to eat:</h2>
+                <div class="columns">
+                    <div class="card card3">
+                        <h3>Jurastic Coast</h3>
+                        <p>The Jurassic Coast, a World Heritage Site, is located in the coast of southern England. This geographical documents 185 million years of geological history. The coast stretches for 154 km and makes up for some phenomenal nature sights, more famously the Durdle Door. This natural arch, formed from a layer of hard limestone, stands vertically out of the sea.</p>
+                    </div>
+                </div>
 
-            <h3>Beef Wellington</h3>
-            <p>This English pie is made of fillet steak coated with pâté, wrapped in puff pastry and then baked. British chef Gordon Ramsay has declared Beef Wellington his signature dish.</p>
+            </div>
+        </div>
+
+        <br><br>
+        <h2>Where to stay:</h2>
+        <div class="whereToStay">
+
+            <div class="columnStay ">
+                <div class="stayCard textOnly">
+
+                    <h3>London</h3> <br>
+                    <p>With so much to visit and see, our recommendation would be to stay in the capital of England.  </p> <br><br>
+                    <p>This metropolitan city is part of the top 5 most visited cities in the world annualy and is filled with breathtaking views.</p> <br><br>
+                    <p>Make sure the hotel room has a good view at a reasonable price point. "CitizenM Tower of London" is one of the hotels in central London with a stunning view for less than 120€.</p>
+                    <br><br><br><br><br><br>
+                </div>
+            </div>
+
+
+            <div class="columnStay imageOnly">
+                <div class="stayCard">
+                    <img src="..//images/barakuPhotographerStayResized.jpg" width="700" >
+                </div>
+            </div>
 
         </div>
+
+
+
+
+        <div class="whatToEatBackground">
+            <br>
+            <h2>What to eat:</h2>
+
+
+            <div class="whatToEat">
+
+                <div class="columnEat imageOnlyEat">
+                    <div class="eatCard">
+                        <img src="..//images/barakuPhotographerEat.jpg" width="700" >
+                    </div>
+                </div>
+
+
+                <div class="columnEat ">
+                    <div class="eatCard textOnlyEat">
+
+                        <h3>Beef Wellington</h3> <br><br><br><br>
+                        <p>This English pie is made of fillet steak coated with pâté, wrapped in puff pastry and then baked. British chef Gordon Ramsay has declared Beef Wellington his signature dish.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
 
         <div class="footer">
         </div>

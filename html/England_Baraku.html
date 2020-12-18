@@ -75,16 +75,32 @@
 
             .imageLink{text-decoration:none;}
 
+
             /*            second row starts here*/
-            .col2{flex-basis:40%;}
-            .row2{
-                display: flex;
-                height:125%;
-                align-items: center;
+
+
+            h2{text-align:center;}
+
+            ul {
+                list-style-type: none;
             }
 
-            h4{text-align:center;}
-            .
+            .rowInfo{
+                width:100%;
+                display:flex;
+                background-color:#00001a;
+                color:white;
+                text-align: center;
+
+
+            }
+            .columnInfo{
+                flex-basis:50%;
+                padding:20px;
+            }
+
+
+
         </style>
     </head>
     <body>
@@ -175,27 +191,39 @@
 
 
         <div class="basicInfo">
-            <h4>Basic information</h4>
-            <div class="row2">
 
-                <div class="col2">
 
-                    <ul>
-                        <li>Capital: London</li>
-                        <li>Location: Western Europe</li>
-                        <li>Climate: Oceanic</li>
-                        <li>Population: 56 milion</li>
-                    </ul>
+
+            <div class="rowInfo">
+
+                <div class="columnInfo">
+                    <h2>Basic Information:</h2>
+                    <div class="infoCard infoLeft">
+
+                            <p>Capital: London</p>
+                            <p>Location: Western Europe</p>
+                            <p>Climate: Oceanic</p>
+                            <p>Population: 56 milion</p>
+                            <p>Area: 130,279 km2</p>
+                            <p>Time zone: GMT+0</p>
+                            <p>Language: English</p>
+                            <p>Currency: Pound sterling (£)</p>
+
+                    </div>
                 </div>
 
-                <div class="col2">
-                    <ul>
 
-                        <li>Area: 130,279 km2</li>
-                        <li>Time zone: GMT+0</li>
-                        <li>Language: English</li>
-                        <li>Currency: Pound sterling (£)</li>
-                    </ul>
+                <div class="columnInfo ">
+                     <h2>Fun facts about England:</h2>
+                    <div class="infoCard infoRight">
+                        <p>Windsor Castle is the oldest and largest inhabited caste and has been in use since the 11th century.</p>
+                        <p>The British drink around 60 billion cups of tea every year</p>
+                        <p>The Queen can travel without a British passport</p>
+                        <p>You can drive from England to France via an underwater tunnel</p>
+                        <p>The world wide web (WWW) was invented by an Englishman called Tim Berners-Lee</p>
+                        <p>There are more chickens than people in England</p>
+                    </div>
+
                 </div>
             </div>
 
@@ -203,15 +231,8 @@
 
 
 
-
         <div class="funfacts">
-            <h3>Fun facts about England:</h3>
-            <p>Windsor Castle is the oldest and largest inhabited caste and has been in use since the 11th century.</p>
-            <p>The British drink around 60 billion cups of tea every year</p>
-            <p>The Queen can travel without a British passport</p>
-            <p>You can drive from England to France via an underwater tunnel</p>
-            <p>The world wide web (WWW) was invented by an Englishman called Tim Berners-Lee</p>
-            <p>There are more chickens than people in England</p>
+
         </div>
 
         <div class="footer">

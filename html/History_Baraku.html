@@ -5,12 +5,124 @@
         <title>England - Historian</title>
         <link rel="stylesheet" type="text/css" href="..//other/styles.css">
         <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color:#d2a679;
+            }
+            .hero-image{
+                height: 600px;
+                width:100%;
+
+
+                background: url(..//images/barakuHistoryBackgroundResized.jpeg) no-repeat center;
+
+                /*                overflow:hidden;*/
+                /*            position:relative;*/
+                background-position:center;
+                background-size:cover:
+            }
+            .container{
+                position:absolute;
+                /*
+                top:200px;
+                left:50px;
+                */
+                top:20%;
+                left:34%;
+                font-weight:700;
+                color:saddlebrown;
+                text-align: center;
+
+            }
+            .container h1{
+                font-size:72px;
+                letter-spacing: 0,2em;
+            }
+            .container h1 span{
+                border:10px solid white;
+                padding:6px;14px;
+                display:inline-block;
+            }
+            .container p{font-style:italic;font-size:20px; text-shadow: 0 0 10px black;}
+
+            /*Card starts here*/
+            h2{
+                text-transform: uppercase;
+                text-align:center;
+                letter-spacing:2px;
+            }
+            h3{
+                text-align:center;
+            }
+            .contentContainer{
+                max-width:1170px;
+                width:100%;
+                margin: 0 auto;
+                display: flex;
+                text-align: justify;
+                background-color:lightgoldenrodyellow;
+
+            }
+            .column{
+                margin: 0 15px 25px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                border-radius:10px;
+                flex-basis:33%;
+            }
+            .card{
+                padding: 15px 25px;
+            }
+            .contentContainerBackground{background-color:#d2a679;
+                padding-top:10px;
+            }
+
+            /*Where to stay card starts here*/
+            .whereToStay{
+                width:100%;
+                display:flex;
+
+            }
+            .columnStay{
+                flex-basis:50%;
+                padding:20px;
+            }
+            .textOnly{
+                text-align:center;
+            }
+
+            /*What to eat card starts here*/
+
+            .whatToEat{
+                width:100%;
+                display:flex;
+
+            }
+            .columnEat{
+                flex-basis:50%;
+                padding:20px;
+                text-align:center;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .whatToEatBackground{
+                background-color:lightyellow;
+                padding:20px;
+            }
+            .cost{
+                text-align:center;
+            }
+
+
+
 
         </style>
     </head>
     <body>
 
-       <div class="topnav">
+        <div class="topnav">
 
             <a href="..//index/index.html">Index</a>
 
@@ -60,37 +172,108 @@
 
             <a href="#">Quiz</a>
         </div>
+
+
         <div class="content">
             <br><br>
-            <h1>The Historian</h1>
 
 
-            <h2>Places to visit:</h2>
+            <div class="hero-image">
+                <div class="container">
+                    <h1><span>The Historian</span></h1>
+                    <span class="description"><p>Welcome to your next historical landmark!</p></span>
+                </div>
+            </div>
 
-            <h3>Stonehenge</h3>
-            <p>One of the most mysterious monuments in existance, built around 5000 years ago. Located in Willtshire, this monument is the spawn of countless theories and tales. Since there are no written records, the reason of construction remains a mystery. One of the most popular theories is that the stones were built by the Druids, high priests of the Celts, for sacrificial ceremonies. These stones weight from 4 to 30 tons and were dragged from 40 to 300 kilometers. This prehistoric monument attracts over a million visitors each year and is part of the UNESCO World Herritage Site.
-            </p>
-            <p>Tickets cost less than 22€.</p>
+            <div class="contentContainerBackground">
+                <h2>Places to visit:</h2>
+                <div class="contentContainer">
 
-            <h3>Tower of London</h3>
-            <p>The Tower of London was built by William the Conqueror in 1066 as a fortification near the Thames River. Over the years it has served as a royal palace, fortress and prison. The Tower took 20 years of construction and stretches for more than 7 hecktares. Be part of the 2 million yearly visitors by taking a tour that includes the Bloody Tower, Medieval Palace, White Tower, The Crown Jewels and much more!
-            </p>
-            <p>From 10:00 AM to 3:00 PM for less than 28€</p>
+                    <br><br>
+                    <div class="columns">
+                        <div class="card card1">
 
-            <h3>British Museum</h3>
-            <p>Discover two million years of culture and history in one of the largest museums in the world! With a collection of over eight million works, the museum represents the history of human culture from its beginnings to the present. The British Museum was established in 1753 and first opened to the public six years later. British colonisation aided its expansion over the years and it contains works from six continents. Some collections are available online through their interactive website!
-                6 million annual visitors.
-            </p>
-            <p>for free! Daily from 10:00 AM to 5:00 PM </p>
+                            <h3>Stonehenge</h3>
+                            <p>One of the most mysterious monuments in existance, built around 5000 years ago. Located in Willtshire, this monument is the spawn of countless theories and tales. Since there are no written records, the reason of construction remains a mystery. One of the most popular theories is that the stones were built by the Druids, high priests of the Celts, for sacrificial ceremonies. These stones weight from 4 to 30 tons and were dragged from 40 to 300 kilometers. This prehistoric monument attracts over a million visitors each year and is part of the UNESCO World Herritage Site.</p>
+                            <p class="cost">9:30 AM - 5:00 PM (22€)</p>
+                        </div>
+                    </div>
 
-            <h2>Where to stay:</h2>
-            <h3>Stay at a Castle</h3>
-            <p>Take the opportunity to stay at one of the many castles turned into hotels in England. Sleeping in a castle is an unforgettable stay that  will take you back hundreds of years. "Coombe Abbey Hotel" is a hotel built on a preserved abbey that dates back to the 12th-century and offers rooms for around 136€, breakfast included.</p>
-            <p>...</p>
+                    <div class="columns">
+                        <div class="card card2">
+                            <h3>Tower of London</h3>
+                            <p>The Tower of London was built by William the Conqueror in 1066 as a fortification near the Thames River. Over the years it has served as a royal palace, fortress and prison. The Tower took 20 years of construction and stretches for more than 7 hecktares. Be part of the 2 million yearly visitors by taking a tour that includes the Bloody Tower, Medieval Palace, White Tower, The Crown Jewels and much more!
+                            </p>
+                            <p class="cost">10:00 AM - 3:00 PM (28€)</p>
+                        </div>
+                    </div>
 
-            <h2>What to eat:</h2>
-            <p>Start the day with a full traditional English breakfast that typically includes bacon, sausages, fried egss, toast, tomatoes and baked beans. The English have enjoyed this delicious breakfast for centuries with the belief that a full breakfast is necessary to get through the day.</p>
-            <p>...</p>
+                    <div class="columns">
+                        <div class="card card3">
+                            <h3>British Museum</h3>
+                            <p>Discover two million years of culture and history in one of the largest museums in the world! With a collection of over eight million works, the museum represents the history of human culture from its beginnings to the present. The British Museum was established in 1753 and first opened to the public six years later. British colonisation aided its expansion over the years and it contains works from six continents. Some collections are available online through their interactive website!
+                            </p>
+                            <p class="cost">10:00 AM - 5:00 PM (Free)</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <br><br>
+            <h2>Where to stay</h2>
+            <div class="whereToStay">
+
+                <div class="columnStay ">
+                    <div class="stayCard textOnly">
+
+                        <h3>Castle Hotel</h3> <br><br>
+
+                        <p>Take the opportunity to stay at one of the many castles turned into hotels in England. </p> <br><br>
+                        <p>Sleeping in a castle is an unforgettable stay that  will take you back hundreds of years.</p> <br><br>
+                        <p>"Coombe Abbey Hotel" is a hotel built on a preserved abbey that dates back to the 12th-century and offers rooms for around 136€, breakfast included.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="columnStay imageOnly">
+                    <div class="stayCard">
+                        <img src="..//images/barakuHistoryCastle.jpeg" width="700" >
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="whatToEatBackground">
+                <h2>What to eat:</h2>
+
+
+                <div class="whatToEat">
+
+                    <div class="columnEat imageOnlyEat">
+                        <div class="eatCard">
+                            <img src="..//images/barakuHistoryBreakfast.jpg" width="700" >
+                        </div>
+                    </div>
+
+
+                    <div class="columnEat ">
+                        <div class="eatCard textOnlyEat">
+
+                            <h3>Traditional English Breakfast</h3> <br><br><br>
+                            <p>Start the day with a full traditional English breakfast that typically includes bacon, sausages, fried egss, toast, tomatoes and baked beans.</p> <br><br>
+                            <p>The English have enjoyed this delicious breakfast for centuries with the belief that a full breakfast is necessary to get through the day</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 

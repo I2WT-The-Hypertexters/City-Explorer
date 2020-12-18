@@ -4,6 +4,118 @@
     <head>
         <title>England - Recreationalist</title>
         <link rel="stylesheet" type="text/css" href="..//other/styles.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color:#d6f5f5;
+            }
+            .hero-image{
+                height: 600px;
+                width:100%;
+
+
+                background: url(..//images/barakuRecreationBackgroundResize.jpg) no-repeat center;
+
+                /*                overflow:hidden;*/
+                /*            position:relative;*/
+                background-position:center;
+                background-size:cover:
+            }
+            .container{
+                position:absolute;
+                /*
+                top:200px;
+                left:500px;
+                */
+                top:20%;
+                left:30%;
+                font-weight:700;
+                color:midnightblue;
+                text-align: center;
+
+            }
+            .container h1{
+                font-size:72px;
+                letter-spacing: 0,2em;
+            }
+            .container h1 span{
+                border:10px solid white;
+                padding:6px;14px;
+                display:inline-block;
+            }
+            .container p{font-style:italic;font-size:20px; text-shadow: 0 0 10px black;}
+
+            /*Card starts here*/
+            h2{
+                text-transform: uppercase;
+                text-align:center;
+                letter-spacing:2px;
+            }
+            h3{
+                text-align:center;
+            }
+            .contentContainer{
+                max-width:1170px;
+                width:100%;
+                margin: 0 auto;
+                display: flex;
+                text-align: justify;
+                background-color:lightgoldenrodyellow;
+
+            }
+            .column{
+                margin: 0 15px 25px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                border-radius:10px;
+                flex-basis:33%;
+            }
+            .card{
+                padding: 15px 25px;
+            }
+            .contentContainerBackground{background-color:#d6f5f5;
+                padding-top:10px;
+            }
+
+            /*Where to stay card starts here*/
+            .whereToStay{
+                width:100%;
+                display:flex;
+
+            }
+            .columnStay{
+                flex-basis:50%;
+                padding:20px;
+            }
+            .textOnly{
+                text-align:center;
+            }
+
+            /*What to eat card starts here*/
+
+            .whatToEat{
+                width:100%;
+                display:flex;
+                text-align: center;
+
+            }
+            .columnEat{
+                flex-basis:50%;
+                padding:20px;
+            }
+            img {
+                border-radius: 50%;
+            }
+            .whatToEatBackground{
+                background-color:lightyellow;
+                padding:20px;
+            }
+
+
+
+        </style>
+
     </head>
     <body>
 
@@ -58,32 +170,106 @@
             <a href="#">Quiz</a>
         </div>
 
-        <div class="content">
-            <h1>The Recreationalist</h1>
-            <h2>Welcome to your next vacation!</h2>
 
-            <h2>Things to do:</h2>
-            <h3>Go to the Beach</h3>
-            <p>Enjoy the relaxing sound of waves in one of the many beaches that England has to offer. Plan the perfect vacation during the summer which lasts from june till august. "Brighton Beach" and "Camber Sands" are some of the more popular choices but we recommend some more secluded beaches such as "Man O'War Beach". </p>
 
-            <h3>Take a Roman Bath</h3>
-            <p>Take a relaxing natural thermal bath in the city of Bath. The city is known and named after its almost 2000 years old Roman-built baths. This UNESCO World Heritage Site is open to the public for visiting and you can take a bath in the nearby spas that use the same water. Thermae Bath Spa offers a number of spa and massage packages for your wellbeing.</p>
-            <p>Pricing starts at 38€</p>
 
-            <h3>Visit an Amusement Park</h3>
-            <p>Plan a day full of fun and entertainment in one of Englands theme parks. Alton Towers, located in Staffordshire, is the biggest amusement park in England and offers a variety of activities. The park incorporates a theme park, water park, spa, mini golf and hotel complex. With over 40 rides and attractions, the park welcomes over two million visiotors annualy.</p>
-            <p>Pricing ranges from 6 - 38€</p>
+        <br><br>
+        <div class="hero-image">
+            <div class="container">
+                <h1><span>The Recreationalist</span></h1>
+                <span class="description"><p>Welcome to your next vacation!</p></span>
+            </div>
+        </div>
 
-            <h2>Where to stay:</h2>
-            <h3>Chester</h3>
-            <p>For a calm and peaceful stay we recommend staying over at a pictoresque city like Chester. The history and charm of Chester is what attracts tourists from all around the globe. This Roman fort is one of the best-preserved walled cities in Britain. The buildings inside the city represent the Victorian architecture. "The Mill Hotel & Spa" is one of the hotels that offers rooms with a pool and spa starting at 60€.</p>
-            <p>...</p>
+        <div class="contentContainerBackground">
+           <br><br> <h2>Things to do:</h2> <br><br>
+            <div class="contentContainer">
 
-            <h2>What to eat:</h2>
-            <h3>Fish and chips</h3>
-            <p> This dish is a must try whilst you are in England. Fish and chips can be enjoyed all across England but ordering by the seaside is always at its most delicious.</p>
+                <br><br>
+                <div class="columns">
+                    <div class="card card1">
+
+                        <h3>Go to the Beach</h3>
+                        <p>Enjoy the relaxing sound of waves in one of the many beaches that England has to offer. Plan the perfect vacation during the summer which lasts from june till august. "Brighton Beach" and "Camber Sands" are some of the more popular choices but we recommend some more secluded beaches such as "Man O'War Beach"</p>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="card card2">
+                        <h3>Take a Roman Bath</h3>
+                        <p>Take a relaxing natural thermal bath in the city of Bath. The city is known and named after its almost 2000 years old Roman-built baths. This UNESCO World Heritage Site is open to the public for visiting and you can take a bath in the nearby spas that use the same water. Thermae Bath Spa offers a number of spa and massage packages for your wellbeing.</p>
+<!--                        <p>Pricing starts at 38€</p>-->
+                    </div>
+                </div>
+
+
+
+                <div class="columns">
+                    <div class="card card3">
+                        <h3>Visit an Amusement Park</h3>
+                        <p>Plan a day full of fun and entertainment in one of Englands theme parks. Alton Towers, located in Staffordshire, is the biggest amusement park in England and offers a variety of activities. The park incorporates a theme park, water park, spa, mini golf and hotel complex. With over 40 rides and attractions, the park welcomes over two million visiotors annualy.</p>
+<!--                        <p>Pricing ranges from 6 - 38€</p>-->
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <br><br><br><br><h2>Where to stay:</h2>
+        <div class="whereToStay">
+
+            <div class="columnStay ">
+                <div class="stayCard textOnly">
+
+                    <h3></h3> <br>
+                    <h3>Chester</h3><br><br>
+                    <p>For a calm and peaceful stay we recommend staying over at a pictoresque city like Chester. The history and charm of Chester is what attracts tourists from all around the globe.</p><br><br>
+                    <p>This Roman fort is one of the best-preserved walled cities in Britain. The buildings inside the city represent the Victorian architecture.</p><br><br>
+                    <p>"The Mill Hotel & Spa" is one of the hotels that offers rooms with a pool and spa starting at 60€.</p>
+                </div>
+            </div>
+
+
+            <div class="columnStay imageOnly">
+                <div class="stayCard">
+                    <img src="..//images/barakuRecreationChester.jpg" width="700" >
+                </div>
+            </div>
 
         </div>
+
+
+
+        <div class="whatToEatBackground">
+           <br><br> <h2>What to eat:</h2>
+
+
+            <div class="whatToEat">
+
+                <div class="columnEat imageOnlyEat">
+                    <div class="eatCard">
+                        <img src="..//images/barakuRecreationFood.jpg" width="700" >
+                    </div>
+                </div>
+
+
+                <div class="columnEat ">
+                    <div class="eatCard textOnlyEat">
+
+                        <h3>Fish and chips</h3>
+                        <br><br><br><br>
+                        <p> This dish is a must try whilst you are in England. Fish and chips can be enjoyed all across England but ordering by the seaside is always at its most delicious.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
 
         <div class="footer">
         </div>
