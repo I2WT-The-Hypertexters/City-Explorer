@@ -4,12 +4,10 @@
     <head>
         <title>Country Explorer</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="content-style.css">
         <link rel="icon" href="photos/icon.jpg" type="image/x-icon"/>
         <style>
-            progress{
-                float:right;
-                width: 20%;
-            }   
+
         </style>
     </head>
     <body>
@@ -27,52 +25,65 @@
             <br>
             <br>
             <br>
-            
+
             <progress value="65" max="100"></progress>
 
             <h1>The Recreationalist</h1>
-            <p>
-                Seeing some of the world's most famous sights certainly tops everyone's list when traveling in Italy. But taking part in an activity or trying something new, especially something you can share with locals, adds a special dimension to a trip.
+
+            <p class="first-sentence">
+                Seeing some of the world's most famous sights certainly tops everyone's list when traveling in Italy.
+                <br>
+                But taking part in an activity or trying something new, especially something you can share with locals, adds a special dimension to a trip.
             </p>
 
+
+            <h2>Places to visit</h2>
             <div class="places">
 
-                <h2>Places to visit</h2>
+                <div class="placesRow">
+                    <h3>Vatican City</h3>
+                    <p>
+                        Vatican City is actually its own state within Italy, although you can only visit this landlocked area by first travelling to Rome.
+                        <br>
+                        If you are in the region then you should definitely consider swinging by one of the most important religious spots in the world, which is home to powerhouses such as the Piazza San Pietro and St Peter’s Basilica.
+                    </p>
 
-                <h3>Vatican City</h3>
-                <p>
-                    Vatican City is actually its own state within Italy, although you can only visit this landlocked area by first travelling to Rome.
-                    <br>
-                    If you are in the region then you should definitely consider swinging by one of the most important religious spots in the world, which is home to powerhouses such as the Piazza San Pietro and St Peter’s Basilica.
-                </p>
+                    <div class="img-n-figcaption">
+                        <img src="Recreation/Vatican-Square.jpg" alt="Vatican Square">
+                        <figcaption>Fig. 1 - Vatican Square</figcaption>
+                    </div>
 
-                <img src="Recreation/Vatican-Square.jpg" alt="Vatican Square">
-                <figcaption>Fig. 1 - Vatican Square</figcaption>
+                    <h3>Trevi Fountain</h3>
+                    <p>
+                        No trip to Rome is complete without a trip to the Trevi Fountain, and in fact if you want to return here then it is considered an absolute necessity.
+                        <br>
+                        Local legend has it that anyone who tosses a coin into the fountain will get good luck that will mean that they will one day return to this great city.
+                        <br>
+                        The fountain is carved in the Baroque style and is made of glittering marble which is lit up at night to spectacular effect.
+                    </p>
 
-                <h3>Trevi Fountain</h3>
-                <p>
-                    No trip to Rome is complete without a trip to the Trevi Fountain, and in fact if you want to return here then it is considered an absolute necessity.
-                    <br>
-                    Local legend has it that anyone who tosses a coin into the fountain will get good luck that will mean that they will one day return to this great city.
-                    <br>
-                    The fountain is carved in the Baroque style and is made of glittering marble which is lit up at night to spectacular effect.
-                </p>
+                    <div class="img-n-figcaption">
+                        <img src="Recreation/Trevi-Fountain.jpg" alt="Trevi Fountain">
+                        <figcaption>Fig. 3 - Trevi Fountain</figcaption>
+                    </div>
+                </div>
 
-                <img src="Recreation/Trevi-Fountain.jpg" alt="Trevi Fountain">
-                <figcaption>Fig. 2 - Trevi Fountain</figcaption>
+                <div class="placesRow">
+                    <h3>Frasassi Cave</h3>
+                    <p>
+                        The Frasassi Cave is located deep in the grounds of Ancona and descending into this wonderful feat of nature can feel like you are travelling to the center of the earth.
+                        <br>
+                        The journey takes 75 minutes and you can expect to find some of the most beautiful karst formations anywhere in the world here.
+                        <br>
+                        The inside of the grotto is covered in walkways and lighted areas that let you take in the amazing geology within such as eerie stalactites and stalagmites.
+                    </p>
 
-                <h3>Frasassi Cave</h3>
-                <p>
-                    The Frasassi Cave is located deep in the grounds of Ancona and descending into this wonderful feat of nature can feel like you are travelling to the center of the earth.
-                    <br>
-                    The journey takes 75 minutes and you can expect to find some of the most beautiful karst formations anywhere in the world here.
-                    <br>
-                    The inside of the grotto is covered in walkways and lighted areas that let you take in the amazing geology within such as eerie stalactites and stalagmites.
-                </p>
-
-                <img src="Recreation/Frasassi-Cave.jpg" alt="Frasassi Cave">
-                <figcaption>Fig. 3 - Frasassi Cave</figcaption>
-
+                    <div class="img-n-figcaption">
+                        <img src="Recreation/Frasassi-Cave.jpg" alt="Frasassi Cave">
+                        <figcaption>Fig. 2 - Frasassi Cave</figcaption>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="to-do-list">
@@ -110,83 +121,84 @@
             </div>
 
             <div class="stay">
+                <div class="columnStay">
+                    <h2>Where to stay</h2>
 
-                <h2>Where to stay</h2>
+                    <h3>The Gritti Palace Venice, Veneto, Italy</h3>
+                    <p>
+                        This 15th-century palazzo occupies one of the loveliest spots on the Grand Canal, looking across to the magnificent Salute church, and has equally sumptuous interiors to match, with priceless antiques and frescoes, and a small but exquisite spa. 
+                    </p>
 
-                <h3>The Gritti Palace Venice, Veneto, Italy</h3>
-                <p>
-                    This 15th-century palazzo occupies one of the loveliest spots on the Grand Canal, looking across to the magnificent Salute church, and has equally sumptuous interiors to match, with priceless antiques and frescoes, and a small but exquisite spa. 
-                </p>
+                    <h3>Grand Hotel Tremezzo Lake Como, Italy</h3>
+                    <p>
+                        Elegant, stylish and fashionable, the Grand Hotel Tremezzo stands majestically on the western shore, offering sophisticated interiors combining strong colours and classical details. Sun yourself by the floating pool, sip cocktails on the terrace or zip along the lake in one of the hotel’s chic water limousines. 
+                    </p>
 
-                <h3>Grand Hotel Tremezzo Lake Como, Italy</h3>
-                <p>
-                    Elegant, stylish and fashionable, the Grand Hotel Tremezzo stands majestically on the western shore, offering sophisticated interiors combining strong colours and classical details. Sun yourself by the floating pool, sip cocktails on the terrace or zip along the lake in one of the hotel’s chic water limousines. 
-                </p>
+                    <h3>Belmond Hotel Splendido Portofino, Liguria, Italy</h3>
+                    <p>
+                        Housed an in a 16th-century monastery building with fabulous views over the bay of Portofino, the luxurious Splendido is one of Italy’s Grande Dame hotels. With its excellent facilities, delicious food and exceptional service, you may never want to leave, but there’s lots to do in the area to tempt all the same.
+                    </p>
+                </div>
 
-                <h3>Belmond Hotel Splendido Portofino, Liguria, Italy</h3>
-                <p>
-                    Housed an in a 16th-century monastery building with fabulous views over the bay of Portofino, the luxurious Splendido is one of Italy’s Grande Dame hotels. With its excellent facilities, delicious food and exceptional service, you may never want to leave, but there’s lots to do in the area to tempt all the same.
-                </p>
+                <div class="columnStay">
+                    <img class="five-star" src="photos/hotel.png">
+                    <br>
+                    <br>
+                    <span class="button">
+                        <a href="https://www.booking.com/booking-home/country/it" class="btn">Book your hotel NOW!</a>
+                    </span>
+                    <br>
+                    <div class="booking">
+                        <h3>Booking.com loves Italy! How about you?</h3>
+                        <p>More choices, more destinations.</p>
+                    </div>
+                </div>
 
             </div>
+
+            <h2>What to eat</h2>
 
             <div class="food">
 
-                <h2>What to eat</h2>
+                <div class="columnEat">
+                    <h3>Spaghetti ai frutti di mare</h3>
+                    <p>
+                        “Spaghetti ai frutti di mare” is mainly a tradition from the central and southern provinces. You can find it with different types of seafood, mussels, clams, razor clams and baby clams, some adding also prawns. The flavor is enhanced by the addition of fresh cherry tomatoes, fresh parsley and extra-virgin olive oil. If you are wondering what are the best foods to eat in Italy, a meal of spaghetti di mare will satisfy your curiosity (and appetite).
+                    </p>
 
-                <h3>Spaghetti ai frutti di mare</h3>
-                <p>
-                    “Spaghetti ai frutti di mare” is mainly a tradition from the central and southern provinces. You can find it with different types of seafood, mussels, clams, razor clams and baby clams, some adding also prawns. The flavor is enhanced by the addition of fresh cherry tomatoes, fresh parsley and extra-virgin olive oil. If you are wondering what are the best foods to eat in Italy, a meal of spaghetti di mare will satisfy your curiosity (and appetite).
-                </p>
+                    <img src="Recreation/Spaghetti.jpg" alt="Spaghetti with seafood">
+                    <figcaption>Fig. 7 - Spaghetti with sea food</figcaption>
+                </div>
 
-                <img src="Recreation/Spaghetti.jpg" alt="Spaghetti with seafood">
-                <figcaption>Fig. 7 - Spaghetti with sea food</figcaption>
+                <div class="columnEat">
+                    <h3>Tiramisu</h3>
+                    <p>
+                        Tiramisu is an elegant and rich layered Italian dessert made with delicate ladyfinger cookies, espresso, mascarpone cheese, eggs, sugar, Marsala wine, rum and cocoa powder. Through the grouping of these diverse ingredients, an intense yet refined dish emerges. The taste of this little sweety dessert will be unforgettable.
+                    </p>
 
-                <h3>Tiramisu</h3>
-                <p>
-                    Tiramisu is an elegant and rich layered Italian dessert made with delicate ladyfinger cookies, espresso, mascarpone cheese, eggs, sugar, Marsala wine, rum and cocoa powder. Through the grouping of these diverse ingredients, an intense yet refined dish emerges. The taste of this little sweety dessert will be unforgettable.
-                </p>
+                    <img src="Recreation/Tiramisu.jpg" alt="Tiramisu">
+                    <figcaption>Fig. 8 - Tiramisu</figcaption>
+                </div>
 
-                <img src="Recreation/Tiramisu.jpg" alt="Tiramisu">
-                <figcaption>Fig. 8 - Tiramisu</figcaption>
+                <div class="columnEat">
+                    <h3>Gelato</h3>
+                    <p>
+                        Gelato or ice cream is one of the most known inventions of Italy,which is generally lower in fat than other styles of frozen desserts. Gelato typically contains 70% less air and more flavouring than other kinds of frozen desserts, giving it a density and richness that distinguishes it from other ice creams.
+                        <br>
+                        The traditional flavours of gelato consist of vanilla, chocolate, hazelnut, pistachio, cream (also known as custard) and stracciatella (fior di latte gelato with chocolate chunks). 
+                    </p>
 
-                <h3>Gelato</h3>
-                <p>
-                    Gelato or ice cream is one of the most known inventions of Italy,which is generally lower in fat than other styles of frozen desserts. Gelato typically contains 70% less air and more flavouring than other kinds of frozen desserts, giving it a density and richness that distinguishes it from other ice creams.
-                    <br>
-                    The traditional flavours of gelato consist of vanilla, chocolate, hazelnut, pistachio, cream (also known as custard) and stracciatella (fior di latte gelato with chocolate chunks). 
-                </p>
-
-                <img src="Recreation/Gelato.jpg" alt="Ice Cream">
-                <figcaption>Fig. 9 - Ice Cream</figcaption>
-
+                    <img src="Recreation/Gelato.jpg" alt="Ice Cream">
+                    <figcaption>Fig. 9 - Ice Cream</figcaption>
+                </div>
             </div>
 
-            <h3>More info...</h3>
         </div>
 
         <div class="footer">
         </div>
 
         <script src="js/scripts.js"></script>
-        <script> 
-            function move() {
-                if (i == 0) {
-                    i = 1;
-                    var elem = document.getElementById("myBar");
-                    var width = 1;
-                    var id = setInterval(frame, 10);
-                    function frame() {
-                        if (width >= 100) {
-                            clearInterval(id);
-                            i = 0;
-                        } else {
-                            width++;
-                            elem.style.width = width + "%";
-                        }
-                    }
-                }
-            }
-        </script>
+
     </body>
 </html>

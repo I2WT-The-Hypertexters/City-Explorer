@@ -4,12 +4,10 @@
     <head>
         <title>Country Explorer</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="content-style.css">
         <link rel="icon" href="photos/icon.jpg" type="image/x-icon"/>
         <style>
-            progress{
-                float:right;
-                width: 20%;
-            }   
+
         </style>
     </head>
     <body>
@@ -31,47 +29,59 @@
             <progress value="65" max="100"></progress>
 
             <h1>The Photographer</h1>
-            <p>
+
+            <p class="first-sentence">
                 From the mountains and hilltop towns to the cities and ancient ruins, Italy is a country brimming with picture possibilities. Add to this the sights along the Mediterranean Coast, the pastoral landscape of Tuscany, and iconic structures like the Colosseum or Leaning Tower of Pisa, and it's easy to see why photographers can't get their fill of this country. Stir your imagination with our list of the most beautiful places to photograph in Italy.
             </p>
 
+            <h2>Places to visit</h2>
             <div class="places">
 
-                <h2>Places to visit</h2>
+                <div class="placesRow">
+                    <h3>Pompeii</h3>
+                    <p>
+                        Photographing the archeological site of Pompeii takes a bit of planning. The site is large, has almost no shade, and can be hot. Try to arrive first thing in the morning and plan your route. Interesting things to photograph include the ancient frescoes, streets with chariot tracks grooved into the stone, and human remains.The main gateway city for visiting Pompeii is Naples, another city with many worthwhile attractions.
+                    </p>
 
-                <h3>Pompeii</h3>
-                <p>
-                    Photographing the archeological site of Pompeii takes a bit of planning. The site is large, has almost no shade, and can be hot. Try to arrive first thing in the morning and plan your route. Interesting things to photograph include the ancient frescoes, streets with chariot tracks grooved into the stone, and human remains.The main gateway city for visiting Pompeii is Naples, another city with many worthwhile attractions.
-                </p>
+                    <div class="img-n-figcaption">
+                        <img src="Photograph/Ancient-Pompeii.jpg" alt="Ancient Pompeii">
+                        <figcaption>Fig. 1 - Ancient Pompeii</figcaption>
+                    </div>
 
-                <img src="Photograph/Ancient-Pompeii.jpg" alt="Ancient Pompeii">
-                <figcaption>Fig. 1 - Ancient Pompeii</figcaption>
+                    <h3>Lake Como</h3>
+                    <p>
+                        Lake Como is a spectacular lake high in the Italian Alps. Photograph the deep blue lake against the backdrop of the mountain scenery. One of the best ways to capture the beauty of Lake Como is from one of the ferries plying regular routes on the lake. Options include motorships, fast ferries, and regular ferries.
+                    </p>
 
-                <h3>Lake Como</h3>
-                <p>
-                    Lake Como is a spectacular lake high in the Italian Alps. Photograph the deep blue lake against the backdrop of the mountain scenery. One of the best ways to capture the beauty of Lake Como is from one of the ferries plying regular routes on the lake. Options include motorships, fast ferries, and regular ferries.
-                </p>
+                    <div class="img-n-figcaption">
+                        <img src="Photograph/Lake-Como.jpg" alt="Lake Como">
+                        <figcaption>Fig. 2 - Lake Como</figcaption>
+                    </div>
+                </div>
 
-                <img src="Photograph/Lake-Como.jpg" alt="Lake Como">
-                <figcaption>Fig. 2 - Lake Como</figcaption>
+                <div class="placesRow">
+                    <h3>Amalfi Coast</h3>
+                    <p>
+                        The towns along the Amalfi Coast cling precariously to the steep mountainsides. Pull out areas along the scenic and twisty road connecting the towns offer opportunities to stop and photograph this beautiful region. For pictures of the towns themselves, you'll need to get out on the sea and shoot towards land. Take one of the inexpensive ferries that go from town to town or, if you have a large group, charter a boat.
+                        <br>
+                        Popular towns along the Amalfi Coast are Positano, Amalfi, Ravello, Maiori, and Minori. Positano is arguably the most photogenic town along the coast. Ravello, home to some fantastic gardens, is set up high and offers beautiful views over the sea.
+                    </p>
 
-                <h3>Amalfi Coast</h3>
-                <p>
-                    The towns along the Amalfi Coast cling precariously to the steep mountainsides. Pull out areas along the scenic and twisty road connecting the towns offer opportunities to stop and photograph this beautiful region. For pictures of the towns themselves, you'll need to get out on the sea and shoot towards land. Take one of the inexpensive ferries that go from town to town or, if you have a large group, charter a boat.
-                    <br>
-                    Popular towns along the Amalfi Coast are Positano, Amalfi, Ravello, Maiori, and Minori. Positano is arguably the most photogenic town along the coast. Ravello, home to some fantastic gardens, is set up high and offers beautiful views over the sea.
-                </p>
+                    <div class="img-n-figcaption">
+                        <img src="Photograph/Almalfi.jpg" alt="Almalfi Coast">
+                        <figcaption>Fig. 3 - Almalfi Coast</figcaption>
+                    </div>
 
-                <img src="Photograph/Almalfi.jpg" alt="Almalfi Coast">
-                <figcaption>Fig. 3 - Almalfi Coast</figcaption>
+                    <h3>The Roman Forum</h3>
+                    <p>
+                        If you are exploring Rome, you will undoubtably come across the Roman Forum. This vast area is full of fantastic structures to photograph. Several of the best sites are the Temple of Antonio Pius dating from AD 141, the Arch of Septimius Severus from AD 203, and the expansive House of the Vestals.
+                    </p>
 
-                <h3>The Roman Forum</h3>
-                <p>
-                    If you are exploring Rome, you will undoubtably come across the Roman Forum. This vast area is full of fantastic structures to photograph. Several of the best sites are the Temple of Antonio Pius dating from AD 141, the Arch of Septimius Severus from AD 203, and the expansive House of the Vestals.
-                </p>
-
-                <img src="Photograph/Roman-Forum.jpg" alt="The Roman Forum">
-                <figcaption>Fig. 4 - The Roman Forum</figcaption>
+                    <div class="img-n-figcaption">
+                        <img src="Photograph/Roman-Forum.jpg" alt="The Roman Forum">
+                        <figcaption>Fig. 4 - The Roman Forum</figcaption>
+                    </div>
+                </div>
 
             </div>
 
@@ -120,59 +130,79 @@
             </div>
 
             <div class="stay">
+                <div class="columnStay">
+                    <h2>Where to stay</h2>
 
-                <h2>Where to stay</h2>
+                    <h3>Mario de' Fiori 37 Rome, Italy</h3>
+                    <p>
+                        This nine-room townhouse hotel – the junior partner of the Rome Luxury Suites family – at the heart of the Spanish Steps fashion shopping district offers stylish accommodation for independent travellers who don’t require room service at the press of a button. 
+                    </p>
 
-                <h3>Mario de' Fiori 37 Rome, Italy</h3>
-                <p>
-                    This nine-room townhouse hotel – the junior partner of the Rome Luxury Suites family – at the heart of the Spanish Steps fashion shopping district offers stylish accommodation for independent travellers who don’t require room service at the press of a button. 
-                </p>
+                    <h3>Borgo Santo Pietro Chiusdino, Tuscany, Italy</h3>
+                    <p>
+                        This romantic luxury country house hotel in a little-visited corner of Tuscany is one of Italy’s great boutique retreats, with a Michelin-starred restaurant, acres of verdant grounds and a remit for self-sufficiency that even extends to its spa and bath products.
+                    </p>
 
-                <h3>Borgo Santo Pietro Chiusdino, Tuscany, Italy</h3>
-                <p>
-                    This romantic luxury country house hotel in a little-visited corner of Tuscany is one of Italy’s great boutique retreats, with a Michelin-starred restaurant, acres of verdant grounds and a remit for self-sufficiency that even extends to its spa and bath products.
-                </p>
+                    <h3>Hotel Santa Caterina Amalfi, Amalfi Coast, Italy</h3>
+                    <p>
+                        A mix of familial warmth, glamour and professionalism makes Hotel Santa Caterina stand out from the competition. Now run by the fourth generation of the family that opened it as a hotel in 1904, it’s the sort of homely yet sophisticated place that you long to return to.
+                    </p>
+                </div>
 
-                <h3>Hotel Santa Caterina Amalfi, Amalfi Coast, Italy</h3>
-                <p>
-                    A mix of familial warmth, glamour and professionalism makes Hotel Santa Caterina stand out from the competition. Now run by the fourth generation of the family that opened it as a hotel in 1904, it’s the sort of homely yet sophisticated place that you long to return to.
-                </p>
+                <div class="columnStay">
+                    <img class="five-star" src="photos/hotel.png">
+                    <br>
+                    <br>
+                    <span class="button">
+                        <a href="https://www.booking.com/booking-home/country/it" class="btn">Book your hotel NOW!</a>
+                    </span>
+                    <br>
+                    <div class="booking">
+                        <h3>Booking.com loves Italy! How about you?</h3>
+                        <p>More choices, more destinations.</p>
+                    </div>
+                </div>
 
             </div>
+
+            <h2>What to eat</h2>
 
             <div class="food">
 
-                <h2>What to eat</h2>
+                <div class="columnEat">
+                    <h3>Grissini</h3>
+                    <p>
+                        Grissini are the long, thin, crisp, breadsticks, usually brought with the bread basket in Italian restaurants. They can be flavored with various sesame seeds, herbs and spices. They originated in Piedmont, but are now common everywhere in Italy and even abroad.
+                        Quality-wise they can vary from the pre-made and -packed standardized breadsticks to home-made as a signature pre-meal snack.
+                    </p>
 
-                <h3>Grissini</h3>
-                <p>
-                    Grissini are the long, thin, crisp, breadsticks, usually brought with the bread basket in Italian restaurants. They can be flavored with various sesame seeds, herbs and spices. They originated in Piedmont, but are now common everywhere in Italy and even abroad.
-                    Quality-wise they can vary from the pre-made and -packed standardized breadsticks to home-made as a signature pre-meal snack.
-                </p>
+                    <img src="Photograph/Grissini.jpg" alt="Grissini">
+                    <figcaption>Fig. 8 - Grissini</figcaption>
+                </div>
 
-                <img src="Photograph/Grissini.jpg" alt="Grissini">
-                <figcaption>Fig. 8 - Grissini</figcaption>
+                <div class="columnEat">
+                    <h3>Bruschetta</h3>
+                    <p>
+                        A classic Italian appetizer or pre-appetizer, usually seasoned with olive oil and garlic and or olive oil and freshly cut tomatoes. One of the simpliest dishes and colorful, so people like to take a photograph before they taste it. 
+                    </p>
 
-                <h3>Bruschetta</h3>
-                <p>
-                    A classic Italian appetizer or pre-appetizer, usually seasoned with olive oil and garlic and or olive oil and freshly cut tomatoes. One of the simpliest dishes and colorful, so people like to take a photograph before they taste it. 
-                </p>
+                    <img src="Photograph/Bruschetta.jpg" alt="Bruschetta">
+                    <figcaption>Fig. 9 - Bruschetta</figcaption>
+                </div>
 
-                <img src="Photograph/Bruschetta.jpg" alt="Bruschetta">
-                <figcaption>Fig. 9 - Bruschetta</figcaption>
+                <div class="columnEat">
+                    <h3>Saltimbocca</h3>
+                    <p>
+                        Saltimbocca alla Romana, as the name indicates, is a typical Roman dish that has become popular around the world.
+                        It is a type of open involtino (roulade) consisting of veal stuffed with prosciutto and sage, sauteed in butter with a bit of white wine. The mixture of butter and wine in which the saltimbocca is being cooked later serves as sauce for the dish.
+                    </p>
 
-                <h3>Saltimbocca</h3>
-                <p>
-                    Saltimbocca alla Romana, as the name indicates, is a typical Roman dish that has become popular around the world.
-                    It is a type of open involtino (roulade) consisting of veal stuffed with prosciutto and sage, sauteed in butter with a bit of white wine. The mixture of butter and wine in which the saltimbocca is being cooked later serves as sauce for the dish.
-                </p>
-
-                <img src="Photograph/Saltimbocca.jpg" alt="Saltimbocca">
-                <figcaption>Fig. 10 - Saltimbocca</figcaption>
+                    <img src="Photograph/Saltimbocca.jpg" alt="Saltimbocca">
+                    <figcaption>Fig. 10 - Saltimbocca</figcaption>
+                </div>
 
             </div>
 
-            <h3>More info...</h3>
         </div>
 
         <div class="footer">

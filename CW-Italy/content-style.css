@@ -1,0 +1,81 @@
+body{
+    font-family: sans-serif;
+    background-color:beige;
+}
+h2{
+    text-align:center; 
+    font-size: 30px;
+}
+progress{
+    float:right;
+    width: 20%;
+}   
+
+.first-sentence{
+    text-align: center;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.places{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.placesRow{
+    flex-basis:50%;
+    padding:20px;
+    text-align: justify;
+    margin: 5px;
+}
+.img-n-figcaption{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.stay{
+    width:100%;
+    max-width:1100px;
+    margin: 0 auto;
+    display: flex;
+    text-align: justify;
+    background-color:#adebad;
+}
+.columnStay{
+    flex-basis:50%;
+    padding:10px;
+    text-align: justify;
+    text-align-last: center;
+}
+.btn{
+    border: 1px solid black;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.five-star{
+    width: 350px;
+}
+.booking{
+    text-transform: capitalize;
+    text-align:center;
+    letter-spacing:1px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25px;
+}
+
+.food{
+    width:100%;
+    display:flex;
+    text-align: center;
+    background-color: limegreen;
+}
+.columnEat{
+    flex-basis:50%;
+    padding:20px;
+    text-align: justify;
+}
