@@ -1,0 +1,299 @@
+<!--Made by: Marino Osmanllari-->
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Country Explorer</title>
+        <link rel="stylesheet" type="text/css" href="..//other/styles.css">
+        <link rel="icon" href="..//images/Marino-icon.jpg" type="image/x-icon"/> 
+        <style>
+            body{
+                margin: 0px;
+            }
+            .content{
+                background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(..//images/Marino-cover.jpg);
+                height: 100vh;
+                width:100%;
+                background-size: cover;
+                background-position: center;
+            }
+            div.content h1{
+                color: white;
+                font-size:90px;
+                text-align: center;
+                margin: 10px;
+            }
+            .intro{
+                color: white;
+                line-height: 20px;
+                padding:10px;
+                margin: 10px;
+                font-size:15px;
+                text-align: justify;
+            }
+            #quote{
+                color: white;
+                margin: 20px;
+                font-size:20px;
+                text-align: center;
+                text-decoration: underline;
+            }
+            #italy{
+                width: 100%;
+                height: 150px;
+                max-width: 250px;
+                display: block;
+                margin: auto;
+
+            }
+            .button{
+                position: absolute;
+                top: 90%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                color: black;
+            }
+            .btn{
+                border: 1px solid white;
+                padding: 10px 30px;
+                color: white;
+                font-size: 18px;
+                text-decoration: none;
+            }
+            .items{
+                display: flex;
+                align-items: center;
+                height:100%;
+            }
+            .main-column{
+                flex-basis:50%;
+            }
+            
+            .image{
+                width:200px;
+                height:220px;
+                display:inline-block;
+                border-radius:10px;
+                padding:10px;
+                box-sizing:border-box;
+                margin:10px 30px;
+                background-position:center;
+                background-size:cover;
+                transition: transform 0.5s;
+            }
+            .image:hover{
+                transform: translateY(-10px)
+            }
+            .Adventure {
+                background-image: url(..//images/Marino-Adventure-cover.jpg);
+            }
+            .History {
+                background-image: url(..//images/Marino-History-cover.jpg);
+            }
+            .Photograph{
+                background-image: url(..//images/Marino-Photograph-cover.jpg);
+            }
+            .Recreation{
+                background-image: url(..//images/Marino-Recreation-cover.jpg);
+            }
+            
+            h4{
+                color: white;
+                text-align: center;
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                }
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                }
+            }
+
+
+            /*            the extra information*/
+            div.columnInfo ul li{
+                text-align: justify;
+                list-style-type: none;
+                padding: 7px;
+            }
+            .extraInfo{
+                width:100%;
+                display:flex;
+                background-color: #4C516D;
+                color:white;
+                text-align: justify;
+                text-align-last: center;
+            }
+            .columnInfo{
+                flex-basis:50%;
+                padding:15px;
+            }
+            .facts{
+                width: 500px;
+            }
+
+
+            progress{
+                float:right;
+                width: 20%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+
+            <a href="..//index/index.html">Index</a>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/England_Baraku.html">England</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/Adventure_Baraku.html">Adventurist</a>
+                    <a href="../html/History_Baraku.html">Historian</a>
+                    <a href="../html/Recreation_Baraku.html">Recreationalist</a>
+                    <a href="../html/Photograph_Baraku.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="Italy-Marino.html">Italy</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="..//html/Adventure-Marino.html">Adventurist</a>
+                    <a href="..//html/History-Marino.html">Historian</a>
+                    <a href="..//html/Recreation-Marino.html">Recreationalist</a>
+                    <a href="..//html/Photograph-Marino.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#">U.S</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Adventurist</a>
+                    <a href="#">Historian</a>
+                    <a href="#">Recreationalist</a>
+                    <a href="#">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="#">Canada</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Adventurist</a>
+                    <a href="#">Historian</a>
+                    <a href="#">Recreationalist</a>
+                    <a href="#">Photographer</a>
+                </div>
+            </div>
+
+            <a href="#">Quiz</a>
+        </div>
+
+
+
+
+        <div class="content">
+            <!--
+<progress value="65" max="100"></progress>
+-->
+
+            <div class="button">
+                <a href="https://www.youtube.com/watch?v=VwJCHnk7C-Q" class="btn">WATCH VIDEO</a>
+                <a href="#moveTo" class="btn">LEARN MORE</a>
+            </div>
+
+            <div class="items">
+                <div class="main-column">
+                    <div class="title">
+                        <h1>Welcome to Italy</h1>
+                    </div>
+                    <img id="italy" src="..//images/Marino-Italian-Flag.png" alt="Flag of Italy">
+                    <p class="intro">
+                        Italy is a country consisting of a continental part, delimited by the Alps and a peninsula surrounded by several islands. Italy is located in south-central Europe, and is considered part of western Europe. A unitary parliamentary republic with Rome as its capital, the country covers a total area of 301,340 km2 and shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican City and San Marino.
+                        <br>
+                        The intellectual and moral faculties of humankind have found a welcome home in Italy, one of the world’s most important centres of religion, visual arts, literature, music, philosophy, culinary arts, and sciences.
+                    </p>
+
+                </div>
+
+
+                <div class="main-column">
+                    <a href="Adventure-Marino.html">
+                        <div class="image Adventure">
+                            <h4>The Adventurist</h4>
+                        </div>
+                    </a>
+                    <a href="History-Marino.html">
+                        <div class="image History">
+                            <h4>The Historian</h4>
+                        </div>
+                    </a>
+                    <a href="Photograph-Marino.html">
+                        <div class="image Photograph">
+                            <h4>The Photographer</h4>
+                        </div>
+                    </a>
+                    <a href="Recreation-Marino.html">
+                        <div class="image Recreation">
+                            <h4>The Recreationalist</h4>
+                        </div>
+                    </a>
+                    <p id="quote">
+                        “Our happiest moments as tourists always seem to come when we stumble upon one thing while in pursuit of something else.”
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="extraInfo">
+
+                <div class="columnInfo">
+                    <h2 id="moveTo">Basic information</h2>
+                    <ul>
+                        <li>Capital: Rome </li>
+                        <li>Location: South-Central Europe (Apennine Peninsula)</li>
+                        <li>Climate: Mediterranean climate </li>
+                        <li>Population: 60 million </li>
+                        <li>Area: 300000 km2 </li>
+                        <li>Time zone: GMT +1</li>
+                        <li>Language: Italian</li>
+                        <li>Currency: Euro (€)</li>
+                    </ul>
+                </div>
+
+                <div class="facts">
+                    <div class="columnInfo">
+                        <h2>Facts about Italy</h2>
+                        <ul>
+                            <li> Its proper name is Repubblica Italiana (Italian Republic),<br> Nickname: “Bel Paese” which means beautiful country.</li>
+                            <li>Rome is capital city was founded in 753BC (over 2700years) and often called "The Eternal City".</li>
+                            <li>Religion is predominantly Christian (Roman Catholics 90%)</li>
+                            <li>Italian is a romance language and derives from Latin.</li>
+                            <li>Italy is the fifth most visited country in the world.</li>
+                            <li>Italy surrounds two of the world’s smallest countries-San Marino in Northern Italy, the oldest republic in the world and Vatican City in Rome, the smallest country in the world.</li>
+                            <li>The highest mountain of Italy can be found in the Alps. It is the Monte Bianco, better known as Mont Blanc, which is 4,807m.</li>
+                            <li>There are over 1,500 lakes in Italy.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer">
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
