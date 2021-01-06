@@ -23,6 +23,23 @@
             .intro-background{
                 background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(..//images/Marino-History-cover.jpg);
             }
+            
+            /*            neon/glow up*/
+            h1{
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #F9D3A5, 0 0 20px #F9D3A5, 0 0 30px #F9D3A5, 0 0 40px #F9D3A5, 0 0 50px #F9D3A5, 0 0 60px #F9D3A5, 0 0 70px #F9D3A5;
+                }
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #EAC3B8, 0 0 40px #EAC3B8, 0 0 50px #EAC3B8, 0 0 60px #EAC3B8, 0 0 70px #EAC3B8, 0 0 80px #EAC3B8;
+                }
+            }
+
         </style>
     </head>
     <body>

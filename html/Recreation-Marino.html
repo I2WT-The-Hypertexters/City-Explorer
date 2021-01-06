@@ -26,6 +26,23 @@
             .intro-text{
                 left: 10%;
             }
+            
+            /*            neon/glow up*/
+            h1{
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #89DBEC, 0 0 20px #89DBEC, 0 0 30px #89DBEC, 0 0 40px #89DBEC, 0 0 50px #89DBEC, 0 0 60px #89DBEC, 0 0 70px #89DBEC;
+                }
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #00909E, 0 0 40px #00909E, 0 0 50px #00909E, 0 0 60px #00909E, 0 0 70px #00909E, 0 0 80px #00909E;
+                }
+            }
+
         </style>
     </head>
     <body>
