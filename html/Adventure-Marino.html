@@ -20,6 +20,22 @@
             .intro-background{
                 background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(..//images/Marino-Adventure-cover.jpg);
             }
+            
+/*            neon/glow up*/
+            h1{
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+            }
+
+            @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #98FB98, 0 0 20px #98FB98, 0 0 30px #98FB98, 0 0 40px #98FB98, 0 0 50px #98FB98, 0 0 60px #98FB98, 0 0 70px #98FB98;
+                }
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #00A572, 0 0 40px #00A572, 0 0 50px #00A572, 0 0 60px #00A572, 0 0 70px #00A572, 0 0 80px #00A572;
+                }
+            }
         </style>
 
     </head>
