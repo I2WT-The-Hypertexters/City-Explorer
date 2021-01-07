@@ -79,6 +79,84 @@
                 padding-top:10px;
             }
 
+            /*            Slideshow starts here*/
+
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            /* Next and previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the next button */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* Background on hover  */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 20px;
+                padding: 8px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+                text-shadow: 0 0 10px black;
+            }
+
+            /* Numbers top left */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* Dots */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+            /*            Slideshow ends here*/
+
             /*Where to stay card starts here*/
             .whereToStay{
                 width:100%;
@@ -91,6 +169,9 @@
             }
             .textOnly{
                 text-align:center;
+            }
+            .columnStay img{
+                border-radius: 50%;
             }
 
             /*What to eat card starts here*/
@@ -105,7 +186,7 @@
                 flex-basis:50%;
                 padding:20px;
             }
-            img {
+            .columnEat img {
                 border-radius: 50%;
             }
             .whatToEatBackground{
@@ -183,7 +264,7 @@
         </div>
 
         <div class="contentContainerBackground">
-           <br><br> <h2>Things to do:</h2> <br><br>
+            <br><br> <h2>Things to do:</h2> <br><br>
             <div class="contentContainer">
 
                 <br><br>
@@ -199,24 +280,61 @@
                     <div class="card card2">
                         <h3>Take a Roman Bath</h3>
                         <p>Take a relaxing natural thermal bath in the city of Bath. The city is known and named after its almost 2000 years old Roman-built baths. This UNESCO World Heritage Site is open to the public for visiting and you can take a bath in the nearby spas that use the same water. Thermae Bath Spa offers a number of spa and massage packages for your wellbeing.</p>
-<!--                        <p>Pricing starts at 38€</p>-->
+                        <!--                        <p>Pricing starts at 38€</p>-->
                     </div>
                 </div>
-
-
 
                 <div class="columns">
                     <div class="card card3">
                         <h3>Visit an Amusement Park</h3>
                         <p>Plan a day full of fun and entertainment in one of Englands theme parks. Alton Towers, located in Staffordshire, is the biggest amusement park in England and offers a variety of activities. The park incorporates a theme park, water park, spa, mini golf and hotel complex. With over 40 rides and attractions, the park welcomes over two million visiotors annualy.</p>
-<!--                        <p>Pricing ranges from 6 - 38€</p>-->
+                        <!--                        <p>Pricing ranges from 6 - 38€</p>-->
 
                     </div>
                 </div>
 
-
             </div>
         </div>
+
+
+        <br><br><br>
+        <!--Slidshow starts here-->
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="..//images/barakuBrightonBeachImage.jpg" style="width:100%;height:603px;">
+                <div class="text">Brighton Beach</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="..//images/barakuBathImage.jpg" style="width:100%;height:603px;">
+                <div class="text">Roman Bath</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="..//images/barakuAltonParkImage.jpg" style="width:100%;height:603px;">
+                <div class="text">Alton Towers Park</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <br><br><br>
+        <!--Slideshow ends here-->
 
 
         <br><br><br><br><h2>Where to stay:</h2>
@@ -245,7 +363,7 @@
 
 
         <div class="whatToEatBackground">
-           <br><br> <h2>What to eat:</h2>
+            <br><br> <h2>What to eat:</h2>
 
 
             <div class="whatToEat">
@@ -275,6 +393,35 @@
         <div class="footer">
         </div>
 
-        <script src="js/scripts.js"></script>
+        <script>
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+        </script>
     </body>
 </html>
