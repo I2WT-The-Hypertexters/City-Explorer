@@ -1,0 +1,161 @@
+{
+    "quizTitle" : "Which kind of <em>Traveler</em> are you?",
+    "outcomes" : {
+        "Adventurer" : {
+            "imgUrl" : "./assets/adventurer.jpg",
+            "text" : "You got Adventurer!",
+            "description" : "The <b>Adventurer</b> loves to take on challenges from hiking to surfing they love to experience all life has to offer and while they are not distracted by the desire to photograph their every moment, they enjoy having pictures to look back fondly on."
+        },
+        "Historian" : {
+            "imgUrl" : "./assets/historian.jpg",
+            "text" : "You got Historian!",
+            "description" : "The <b>Historian</b> enjoys living in the past, seeing how and why the world was the way it is. Reliving past cultures is what drives the <b>Historian</b>."
+        },
+        "Recreationalist" : {
+            "imgUrl" : "./assets/recreationalist.jpg",
+            "text" : "You got Recreationalist!",
+            "description" : "The <b>Recreationalist</b> likes to enjoy things at their own pace. For them, life isn't a race--so why not smell the roses on the way? They enjoy more casual activities such as trying new food or seeing attractions not for their historical or pictorial properties but rather their entertainment value. Seeing a play or participating in a parade are just a few examples of such attractions. They enjoy travel to get away from the busyness of life and to experience new activities, but at a slower pace than an <b>Adventurer</b>, for example." 
+        },
+        "Photographer" : {
+            "imgUrl" : "./assets/photographer.jpg",
+            "text" : "You got Photographer!",
+            "description" : "The <b>Photographer</b> strives to take an even better picture than the last. Their main objective is to find and document the most beautiful places on earth. While historic locations can be interesting, they are unlikely to be attractive to a <b>Photographer</b> unless it is equally photogenic."
+        }
+    },
+    "questions" : [
+        {
+            "questionTitle" : "Pick your favorite food",
+            "backgroundImage" : "",
+            "responseOptions" : [
+                {
+                    "imgUrl" : "./assets/photographer_1.jpg",
+                    "caption" : "Avocado Toast",
+                    "pointsFor" : "Photographer"
+                },
+                {
+                    "imgUrl" : "./assets/adventurer_1.jpg",
+                    "caption" : "Pizza",
+                    "pointsFor" : "Adventurer"
+                },
+                {
+                    "imgUrl" : "./assets/recreationalist_1.jpg",
+                    "caption" : "Bacon Rolls",
+                    "pointsFor" : "Recreationalist"
+                },
+                {
+                    "imgUrl" : "./assets/historian_1.jpg",
+                    "caption" : "Noodles",
+                    "pointsFor" : "Historian"
+                }
+            ]
+        },
+
+        {
+            "questionTitle" : "Pick a color",
+            "backgroundImage" : "",
+            "responseOptions" : [
+                {
+                    "imgUrl" : "./assets/adventurer_2.jpg",
+                    "caption" : "Pink Swirl",
+                    "pointsFor" : "Adventurer"
+                },
+                {
+                    "imgUrl" : "./assets/historian_2.jpg",
+                    "caption" : "Space Blue",
+                    "pointsFor" : "Historian"
+                },
+                {
+                    "imgUrl" : "./assets/recreationalist_2.jpg",
+                    "caption" : "Sky Blue",
+                    "pointsFor" : "Recreationalist"
+                },
+                {
+                    "imgUrl" : "./assets/photographer_2.jpg",
+                    "caption" : "Orange Drops",
+                    "pointsFor" : "Photographer"
+                }
+            ]
+        },
+
+        {
+            "questionTitle" : "Pick a hobby that appeals to you",
+            "backgroundImage" : "",
+            "responseOptions" : [
+                {
+                    "imgUrl" : "./assets/historian_3.jpg",
+                    "caption" : "Stamps",
+                    "pointsFor" : "Historian"
+                },
+                {
+                    "imgUrl" : "./assets/adventurer_3.jpg",
+                    "caption" : "Hiking",
+                    "pointsFor" : "Adventurer"
+                },
+                {
+                    "imgUrl" : "./assets/recreationalist_3.jpg",
+                    "caption" : "Surfing",
+                    "pointsFor" : "Recreationalist"
+                },
+                {
+                    "imgUrl" : "./assets/photographer_3.jpg",
+                    "caption" : "Wildlife Watching",
+                    "pointsFor" : "Photographer"
+                }
+            ]
+        },
+
+        {
+            "questionTitle" : "Pick a pet",
+            "backgroundImage" : "",
+            "responseOptions" : [
+                {
+                    "imgUrl" : "./assets/historian_4.jpg",
+                    "caption" : "Bird",
+                    "pointsFor" : "Historian"
+                },
+                {
+                    "imgUrl" : "./assets/photographer_4.jpg",
+                    "caption" : "Jellyfish",
+                    "pointsFor" : "Photographer"
+                },
+                {
+                    "imgUrl" : "./assets/adventurer_4.jpg",
+                    "caption" : "Puppy",
+                    "pointsFor" : "Adventurer"
+                },
+                {
+                    "imgUrl" : "./assets/recreationalist_4.jpg",
+                    "caption" : "Kitten",
+                    "pointsFor" : "Recreationalist"
+                }
+            ]
+        },
+
+        {
+            "questionTitle" : "Pick a house",
+            "backgroundImage" : "",
+            "responseOptions" : [
+                {
+                    "imgUrl" : "./assets/adventurer_5.jpg",
+                    "caption" : "Pyramid Home",
+                    "pointsFor" : "Adventurer"
+                },
+                {
+                    "imgUrl" : "./assets/historian_5.jpg",
+                    "caption" : "Cobble Cottage",
+                    "pointsFor" : "Historian"
+                },
+                {
+                    "imgUrl" : "./assets/photographer_5.jpg",
+                    "caption" : "Lake House",
+                    "pointsFor" : "Photographer"
+                },
+                {
+                    "imgUrl" : "./assets/recreationalist_5.jpg",
+                    "caption" : "City Dwelling",
+                    "pointsFor" : "Recreationalist"
+                }
+            ]
+        }
+    ]
+}
