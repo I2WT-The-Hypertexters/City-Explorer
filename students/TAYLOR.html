@@ -1,0 +1,215 @@
+<!--Made by: Chase Taylor-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="..//other/styles.css">
+        <style>
+            /* navigation bar*/
+            body{
+                font-family: sans-serif;
+            }
+            .topnav {
+                background-color:#335;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+            }
+            .topnav a {
+                float: left;
+                font-size:16px;
+                color:white;
+                text-align:center;
+                padding: 14px 16px;
+                text-decoration:none;
+                min-width:100px;
+
+            }
+            .dropdown {
+                float: left;
+                overflow: hidden;
+
+            }
+            .dropdown .dropbutton {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 0px;
+                background-color: #335;
+                margin: 0;
+            }
+            .topnav a:hover, .dropdown:hover, .dropbutton {
+                background-color:cadetblue;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #335;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                text-decoration:none;
+            }
+            .dropdown-content a{
+                float:none;
+                color:white;
+                padding: 10px 6px;
+                display:block;
+                text-align:center;
+                font-size:14px;
+                min-width:120px;
+            }
+            .dropdown-content a:hover{
+                background-color:cadetblue;
+            }
+            .dropdown:hover .dropdown-content{
+                display:block;
+            }
+
+            .dropbutton{display:block}
+            /*end of navigation bar*/
+
+            .header {
+                text-align:center;
+            }
+            .description {
+                font-style:italic;
+            }
+
+            body{
+                background-color:rgb(230, 255, 255);
+            }
+
+            .footer {
+                bottom:0px;
+                left:0px;
+            }
+            .column {
+                float: left;
+                width: 48%;
+                padding: 0 10px;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+                padding: 16px;
+                text-align: center;
+                background-color: #f1f1f1;
+                border-radius: 25px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="topnav">
+
+            <a href="#index">Index</a>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/England_Baraku.html">England</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/Adventure_Baraku.html">Adventurist</a>
+                    <a href="../html/History_Baraku.html">Historian</a>
+                    <a href="../html/Recreation_Baraku.html">Recreationalist</a>
+                    <a href="../html/Photograph_Baraku.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/Italy-Marino.html">Italy</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="..//html/Adventure-Marino.html">Adventurist</a>
+                    <a href="..//html/History-Marino.html">Historian</a>
+                    <a href="..//html/Recreation-Marino.html">Recreationalist</a>
+                    <a href="..//html/Photograph-Marino.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/US-Chase.html">U.S</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="..//html/Adventure-Chase.html">Adventurist</a>
+                    <a href="..//html/History-Chase.html">Historian</a>
+                    <a href="..//html/Recreation-Chase.html">Recreationalist</a>
+                    <a href="..//html/Photograph-Chase.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/canada_jon.html">Canada</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/adventure_jon.html">Adventurist</a>
+                    <a href="../html/history_jon.html">Historian</a>
+                    <a href="../html/recreation_jon.html">Recreationalist</a>
+                    <a href="../html/photograph_jon.html">Photographer</a>
+                </div>
+            </div>
+
+            <a href="../CW-Quiz/index.html">Quiz</a>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a>About Us</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../students/BARAKU.html">Baraku</a>
+                    <a href="#">Osmanllari</a>
+                    <a href="#/">Taylor</a>
+                    <a href="#">Pushkolli</a>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="header">
+            <h1>Chase Taylor</h1>
+
+        </div>
+
+        <img src="../images/chasePICTURE.jpg" style="width:700px; height:500px" class="center">
+        <div class="description" align="center">
+            <p>The above image is of my girlfriend Tori and I.</p>
+        </div>
+
+        <p>I was responsible for the <a href="../html/US-Chase.html">U.S.</a> pages and the <a href="../CW-Quiz/index.html">Quiz</a>.</p>
+
+        <ul>
+            <h4>Basic Information</h4>
+            <li>Name: Chase Taylor</li>
+            <li>Date of Birth: 16/06/2000</li>
+            <li>Place of Birth: Houston, Texas. U.S.</li>
+            <li>Major: Computer Science</li>
+        </ul>
+
+        <p>My interest in Computer Science lies in the innovation and propagation of <a href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface">Brain-Machine Interface</a> technology in order to enchance the human experience and prolong life.</p>
+        <p>I also enjoy card games such as <a href="https://magic.wizards.com/en">Magic: the Gathering</a> and <a href="https://en.wikipedia.org/wiki/Poker">Poker</a>.</p>
+        <p>My bookshelf is full of mostly <a href="https://en.wikipedia.org/wiki/Karl_Marx">political theory</a> and <a href="https://plato.stanford.edu/entries/epicurus/">philosophy</a> though I prefer to listen to audiobooks.</p>
+        <p>Now onto the technical information!</p>
+        <h4>HTML & CSS</h4>
+        <p>The HTML/CSS used on this page and the others is fairly standard given the basic structure and straightforward layout.</p>
+        <p>I suppose the most interesting part is the navigation menu which consists of several divs subsuming eachother to create the drop down effect.</p>
+        <p>Outside of that the Javascript in the <a href="../CW-Quiz/index.html">Quiz</a> was the most challenging for me personally. It required me to use a lot of references and examine existing projects before I had a working prototype.</p>
+
+        <div class="footer">
+        <h5>Made by the "HyperTexters"- 2020</h5>
+        </div>
+    <script src="js/scripts.js"></script>
+    </body>
+</html>
