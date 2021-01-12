@@ -127,6 +127,7 @@ function toggleCheckedClass(image) {
     }
 }
 
+// checks to see if # of user entries is equal to # of questions when submit button is pressed
 function checkSubmitStatus() {
     var choices = $("input[type='radio']:checked").map(function(i, radio) {
         return $(radio).val();
@@ -177,6 +178,7 @@ function showResults(outcome) {
     }
 }
 
+// clears answers when page is refreshed
 function refreshPage() {
     location.reload();
 }
@@ -186,7 +188,7 @@ function submitQuiz() {
         return $(radio).val();
     }).toArray();
 
-    // tally the results
+    // add the cumulative results of user input to each variable
     for (var i = 0; i < choices.length; i++) {
         var key = quizTable.get(choices[i]);
         if (quizOutcomes.has(key)) {
@@ -195,7 +197,7 @@ function submitQuiz() {
         }
     }
 
-    // find the outcome
+    // calculate result based on user input
     var max = -1;
     var outcome;
     for (var [key,value] of quizOutcomes.entries()) {
