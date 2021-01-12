@@ -8,57 +8,68 @@
 
         <style>
             body{font-family: cursive; /*Changed the font of the body*/
-                margin:0;
-                padding:0;
+                margin:0; /*Removed the margin of the body so that the content fills the page*/
                 background-color:darkslateblue
             }
 
             .topnav{font-family: sans-serif;} /*Changed the font of the navigation so that it is the same everywhere*/
 
-            h2{text-align: center;
-                color:white;
+            h2{text-align: center; /*Aligned the h2 tags in the center*/
+                color:white; /*Changed the color of the h2 tags to white*/
             }
 
-            .row h2{color:black;}
+            .row h2{color:black;} /*Changed the color of h2 tags inside the class row to black*/
 
             /*Introduction card starts here*/
             .card {
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-                width: 40%;
-                position:relative;
-                left:30%;
-            }
-
-            .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                width: 40%; /*Set the width of hte card to 40% of the page*/
+                position:relative; /*Changed the position to relative so that it can be aligned*/
+                left:30%; /*Moved the card 30% from the left*/
             }
 
             .container {
-                padding: 2px 16px;
+                padding: 2px 16px; /*Added padding to the card*/
             }
 
             .theBackground{
-                background:url(..//images/barakuPersonalBackgroundBackground.jpg) no-repeat center;
-                min-height: 800px;
+                background:url(..//images/barakuPersonalBackgroundBackground.jpg) center; /*Added a background image to the page and centered it*/
+                min-height: 800px; /*Changed the minimum height of the background image to extend it*/
             }
 
             .introduction{
-                text-align: center;
-                background:url(..//images/barakuPersonalBackground.jpg) no-repeat center;
-                background-position:center;
-                background-size:cover;
-                color:white;
+                text-align: center; /*Aligned the text to the center*/
+                background:url(..//images/barakuPersonalBackground.jpg) center; /*Added a centered background image to the introduction card*/
+                background-size:cover; /*Changed the background size to cover the entire card*/
+                color:white; /*Changed the font color to white*/
                 display:inline-block;
-                position:relative;
+                position:relative; /*Changed the position to relative so that it can be moved*/
                 left:550px;
                 top:80px;
 
             }
             .introduction h1{
-                font-size:50px;
+                font-size:50px; /*Increased the font size of the h1 tags inside the introduction class*/
             }
             /*introduction ends here*/
+
+            /*About Me cards start here*/
+            .twoColumns {
+                float: left; /*Floated the card to the left to add another card to the right*/
+                width: 50%; /*Changed the width of the cards to 50% of the page*/
+                box-sizing: border-box; /*Changed the box sizing behavior*/
+                min-height:450px;
+                text-align: center;
+            }
+            .twoColumns p{font-size: 17px;}
+
+            /* Clear floats after the columns */
+            .twoRows:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /*About me cards end here*/
+
 
             /*Music albums start here*/
             /* Create three equal columns that floats next to each other */
@@ -76,14 +87,16 @@
                 clear: both;
             }
 
+
+
         </style>
     </head>
     <body>
         <div class="topnav"> <!--Start of the navigation-->
 
-            <a href="..//index/index.html">Index</a>
+            <a href="..//index/index.html">Index</a> <!--Used anochor and href to link to other pages-->
 
-            <div class="dropdown">
+            <div class="dropdown"> <!--Added dropdown menus-->
                 <button class="dropbutton"><a href="..//html/England_Baraku.html">England</a>
                 </button>
                 <div class="dropdown-content">
@@ -142,16 +155,16 @@
         </div> <!--End of the navigation-->
 
 
-        <br>
-        <div class="theBackground">
+        <br> <!--Used a break to add space between content-->
+        <div class="theBackground"> <!--Organized everything in divs to structure the page-->
             <div class="introduction">
                 <br><br>
                 <h1>Tron Baraku</h1> <!--Header tag with highest importance-->
 
                 <div class="card">
-                    <img src="..//images/barakuAvatar5.png" alt="Avatar" style="width:100%">
+                    <img src="..//images/barakuAvatar5.png" alt="Avatar" style="width:100%"><!--Used the img src tag to import an image that covers 100% of the width available-->
                     <div class="container">
-                        <p>Get to know me!</p>
+                        <p>Get to know me!</p><!--Used the paragraph tag to add content-->
                     </div>
                 </div>
                 <div class="general-info">
@@ -163,9 +176,34 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        <br><br><br><br>
+
+
+        <div class="twoRows">
+            <div class="twoColumns" style="background-color:#336699;"><!--Changed the background color using inline css-->
+                <h2>About Me</h2><br>
+                <p>My favorite food is Pizza</p>
+                <p>I enjoy watching and playing football</p>
+                <p>I used to play semi-pro and I support FC Barcelona</p><br>
+                <p>I got introduced to computer science in High-School</p>
+                <p>My favorite computer game is CS:GO</p>
+                <p>I have listed below some of my favourite albums and shows</p>
+            </div>
+            <div class="twoColumns" style="background-color:#2d5986;"><!--Changed the background color using inline css-->
+                <h2>About My Work</h2><br>
+                <p>My responsibility was to develop the pages about England</p>
+                <p>In addition to that I developed the Index page</p><br>
+                <p>Furthermore, I designed the navigation of the website</p>
+                <p>As part of the "HyperTexters" team, my role was to organize the group</p>
+            </div>
+        </div>
+        <br><br><br>
+
+
+        <hr>
         <h2>Favorite Music Albums</h2>
 
+        <br><br>
         <div class="row">
             <div class="column" style="background-color:#b3b3ff;">
                 <h2>good kid, m.A.A.d city</h2>
@@ -181,7 +219,9 @@
             </div>
         </div>
         <br><br><br>
+
         <hr>
+
         <h2>Favorite TV Shows</h2>
 
         <div class="row">
@@ -200,8 +240,6 @@
         </div>
 
 
-
-
         <div class="footer">
             <div class="inner-footer">
                 <div class="quick-links">
@@ -218,9 +256,6 @@
         <div class="outer-footer">
             <p>The HyperTexters © 2020</p>
         </div>
-
-
-
 
     </body>
 </html>
