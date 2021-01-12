@@ -1,4 +1,8 @@
-/* GLOBAL VARIABLES */
+/* reference */
+/* the code in the CW-Quiz section is based on the below repo and several others including a traditional BuzzFeed Quiz*/
+/* https://github.com/marianlam/buzzfeed-quiz */
+
+/* variables */
 var quizTable;
 var quizOutcomes;
 var quizData;
@@ -13,7 +17,7 @@ $.getJSON("./quiz.json", function(data) {
     populateQuiz();
     populateHeader();
 
-    // initialize hash map
+    // creating array to hold data
     quizTable = new Map();
     var questions = data["questions"];
     var responseOptions = data["questions"][0]["responseOptions"];
@@ -27,14 +31,13 @@ $.getJSON("./quiz.json", function(data) {
 
     // initialize map of outcomes -- an outcome
     // is key-value pair -- see example below:
-    // { key : "Stan", value: "5" }
+    
     quizOutcomes = new Map();
     var outcomes = Object.keys(data["outcomes"]);
     for (var i = 0; i < outcomes.length; i++) {
         var key = outcomes[i];
         quizOutcomes.set(key,0);
     }
-    
     addSubmitBtn();
     checkSubmitStatus();
 });
@@ -204,6 +207,3 @@ function submitQuiz() {
 
     showResults(outcome);
 }
-
-/* reference for quiz.json below */
-/* https://github.com/marianlam/buzzfeed-quiz */
