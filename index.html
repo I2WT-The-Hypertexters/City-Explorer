@@ -1,0 +1,232 @@
+<!--Made by: Tron Baraku-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="..//other/styles.css">
+
+
+        <style>
+            /* navigation bar*/
+            body{
+                font-family: sans-serif;
+                margin:0;
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+            h1{font-size: 60px;}
+            .topnav {
+                background-color:#335;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+            }
+            .topnav a {
+                float: left;
+                font-size:16px;
+                color:white;
+                text-align:center;
+                padding: 14px 16px;
+                text-decoration:none;
+                min-width:100px;
+
+            }
+            .dropdown {
+                float: left;
+                overflow: hidden;
+
+            }
+            .dropdown .dropbutton {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 0px;
+                background-color: #335;
+                margin: 0;
+            }
+            .topnav a:hover, .dropdown:hover, .dropbutton {
+                background-color:cadetblue;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #335;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                text-decoration:none;
+            }
+            .dropdown-content a{
+                float:none;
+                color:white;
+                padding: 10px 6px;
+                display:block;
+                text-align:center;
+                font-size:14px;
+                min-width:120px;
+            }
+            .dropdown-content a:hover{
+                background-color:cadetblue;
+            }
+            .dropdown:hover .dropdown-content{
+                display:block;
+            }
+
+            .dropbutton{display:block}
+            /*end of navigation bar*/
+
+            .header {
+                text-align:center;
+            }
+            .description {
+                font-style:italic;
+            }
+
+            body{
+                background-color:rgb(230, 255, 255);
+            }
+
+            .footer {
+                bottom:0px;
+                left:0px;
+            }
+            .column {
+                float: left;
+                width: 48%;
+                padding: 0 10px;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+                padding: 16px;
+                text-align: center;
+                background-color: #f1f1f1;
+                border-radius: 25px;
+                min-height:420px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="topnav">
+
+            <a href="#index">Index</a>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/England_Baraku.html">England</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/Adventure_Baraku.html">Adventurist</a>
+                    <a href="../html/History_Baraku.html">Historian</a>
+                    <a href="../html/Recreation_Baraku.html">Recreationalist</a>
+                    <a href="../html/Photograph_Baraku.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/Italy-Marino.html">Italy</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="..//html/Adventure-Marino.html">Adventurist</a>
+                    <a href="..//html/History-Marino.html">Historian</a>
+                    <a href="..//html/Recreation-Marino.html">Recreationalist</a>
+                    <a href="..//html/Photograph-Marino.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/US-Chase.html">U.S</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="..//html/Adventure-Chase.html">Adventurist</a>
+                    <a href="..//html/History-Chase.html">Historian</a>
+                    <a href="..//html/Recreation-Chase.html">Recreationalist</a>
+                    <a href="..//html/Photograph-Chase.html">Photographer</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a href="..//html/canada_jon.html">Canada</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/adventure_jon.html">Adventurist</a>
+                    <a href="../html/history_jon.html">Historian</a>
+                    <a href="../html/recreation_jon.html">Recreationalist</a>
+                    <a href="../html/photograph_jon.html">Photographer</a>
+                </div>
+            </div>
+
+            <a href="..//CW-Quiz/index.html">Quiz</a>
+
+            <div class="dropdown">
+                <button class="dropbutton"><a>About Us</a>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../students/BARAKU.html">Baraku</a>
+                    <a href="../students/OSMANLLARI.html">Osmanllari</a>
+                    <a href="../students/TAYLOR.html">Taylor</a>
+                    <a href="../students/JON.html">Pushkolli</a>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="header">
+            <h1>"Country Explorer"</h1>
+
+            <div class="description">
+                <p>A TOOL TO DISCOVER NEW DESTINATIONS</p>
+            </div>
+        </div>
+        <img src="../images/barakuAirplane_index.jpg" class="airplane" style="width:1600px;height:600px">
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2>Why travel?</h2>
+                    <p>Traveling is highly beneficial for your pysical, mental and emotional health. Studies show that traveling lowers stress levels, but also chances of developing a heart diesease. Sometimes, the best thing to do is to pack your bags and disconnect from your daily routine.</p>
+                    <a href="..//CW-Quiz/index.html"><img src="..//images/barakuTravelclippart.png" style="width:222px;height:227px"></a>
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h2>Travel where?</h2>
+                    <p>The world is full of fascinating destinations, choosing one can be puzzling. This is why we have researched and compiled some of the best countries to visit, so that you can start planning your next vacation. Click below to navigate to our personalised quiz that will determine the type of traveler you are!</p>
+                   <a href="..//CW-Quiz/index.html"><img src="../images/barakuEarthclippart.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="quick-links">
+                    <ul>
+                        <li class="quick-items"><a href="../index/index.html">Home</a></li>
+                        <li class="quick-items"><a href="..//students/BARAKU.html">Tron</a></li>
+                        <li class="quick-items"><a href="..//students/OSMANLLARI.html">Marino</a></li>
+                        <li class="quick-items"><a href="..//students/TAYLOR.html">Chase</a></li>
+                        <li class="quick-items"><a href="..//students/JON.html">Jon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="outer-footer">
+            <p>The HyperTexters © 2020</p>
+        </div>
+    </body>
+</html>
